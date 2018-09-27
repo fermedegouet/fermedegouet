@@ -1,0 +1,141 @@
+<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+  <div class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Prénom/Nom</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control is-expanded has-icons-left">
+          <input class="input" type="text" placeholder="Prénom" name="first-name">
+          <span class="icon is-small is-left">
+            <i class="fa fa-user"></i>
+          </span>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control is-expanded has-icons-left">
+          <input class="input" type="text" placeholder="Nom" name="last-name">
+          <span class="icon is-small is-left">
+            <i class="fa fa-user"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Adresse</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control is-expanded has-icons-left">
+          <input class="input" type="text" placeholder="2 rue des Acacias, 42000 Saint-Étienne" name="address">
+          <span class="icon is-small is-left">
+            <i class="fa fa-user"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Email</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control is-expanded has-icons-left has-icons-right">
+          <input class="input is-danger" type="email" placeholder="coucou@" name="email">
+          <span class="icon is-small is-left">
+            <i class="fa fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fa fa-exclamation-triangle"></i>
+          </span>
+          <p class="help is-danger">Cette adresse email est invalide</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Montant</label>
+    </div>
+    <div class="field-body">
+      <div class="field has-addons">
+        <div class="control">
+          <input class="input" type="number" step="100" min="100" max="{{ .Site.Params.pretTotal }}" placeholder="1000" name="amount">
+        </div>
+        <div class="control">
+          <a class="button is-static">
+            €
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Taux d'intérêt</label>
+    </div>
+    <div class="field-body">
+      <div class="field has-addons">
+        <div class="control">
+          <input class="input" type="number" step="0.1" min="{{ .Site.Params.tauxMin }}" max="{{ .Site.Params.tauxMax }}" placeholder="0" value="0" name="rate">
+        </div>
+        <div class="control">
+          <a class="button is-static">
+            %
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control">
+        <input type="checkbox" name="meet" checked>
+
+        Je suis intéressé pour me faire rembourser une partie de mon prêt en
+        colis de viande.
+
+        <p class="help">
+        Les colis devraient faire entre 6 et 7kg, et devraient coûter 15€/kg,
+        avec une participation au transport de 0 à 1€/kg selon l'éloignement
+        de la ferme. Cocher cette case ne vous engage en rien, et me permet
+        juste de savoir si vous voulez que je vous contacte quand
+        j'envisagerai une livraison près de chez vous.
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Message</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control">
+          <textarea name="message" class="textarea"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control">
+          <button type="submit" class="button is-primary">Valider</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
