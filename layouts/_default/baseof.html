@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr-fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+    <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" property="og:title">
+    <meta content="{{ delimit .Keywords ", " }}" name="keywords">
+    <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Title }}{{ end }}" property="og:description">
+    {{ block "head" . }}{{ end }}
+    <link href="{{ "css/ferme.min.css" | relURL }}" rel="stylesheet" type="text/css">
+  </head>
+  <body class="ferme-body">
+    <div class="ferme-header{{ block "ferme-header-classes" . }}{{ end }}">
+      {{ block "header-logo" . }}
+      {{ end }}
+      {{ block "menu" .}}
+      <nav id="ferme-nav" class="ferme-navbar{{ block "ferme-nav-classes" . }}{{ end }}" role="navigation" aria-label="main navigation">
+        <div class="ferme-navbar-container">
+          <div class="ferme-navbar-brand">
+            <a role="button" class="ferme-navbar-burger" aria-label="menu" aria-expanded="false" data-target="ferme-nav-menu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="ferme-navbar-menu" id="ferme-nav-menu">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main.ByWeight }}
+            <a href="{{ .URL }}"  class="ferme-navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
+              {{ .Name }}
+            </a>
+            {{ end }}
+            <a href="{{ .Site.BaseURL }}#contact"  class="ferme-navbar-item">
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+      {{ end }}
+      {{ block "banner" .}}
+      {{ end }}
+    </div>
+    <div class="ferme-main">
+    {{ block "main" . }}
+    {{ end }}
+    </div>
+    <div class="ferme-footer">
+      <div class="ferme-footer-content">
+      {{ partial "legal.html" . }}
+      </div>
+    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.ferme-navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+</script>
+    {{ block "footer" . }}
+    {{ end }}
+  </body>
+</html>
