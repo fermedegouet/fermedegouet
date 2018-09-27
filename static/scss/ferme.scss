@@ -1,0 +1,238 @@
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+// local variables
+$ferme-logo-height: 200px;
+$ferme-logo-container-height: $ferme-logo-height + 20px;
+$ferme-navbar-height: 50px;
+$ferme-people-img-size: 160px;
+
+$granny-smith-apple: #b3d89c;
+$tea-green: #d0efb1;
+$cambridge-blue: #9dc3c2;
+$moonstone-blue: #77a6b6;
+$blue-wonder: #4d7298;
+$middle-green: #499f68;
+
+// bulma variables
+$section-padding: 3rem 0;
+//$navbar-background-color: $granny-smith-apple;
+//$navbar-item-hover-background-color: $tea-green;
+
+@import "../../node_modules/bulma/bulma.sass";
+
+html, body {
+  height: 100%;
+}
+
+.ferme-navbar-brand img {
+  //height: 50px;
+}
+
+.ferme-header.ferme-header-with-logo {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+#ferme-header-logo {
+  position: relative;
+  text-align: center;
+  display: table-row;
+  height: $ferme-logo-container-height;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+//#ferme-header-logo:after {
+//  content: "";
+//  position: absolute;
+//  background-image: url(../img/epis.jpg);
+//  background-position: 50% 50%;
+//  top: 0;
+//  left: 0;
+//  opacity: 0.4;
+//  background-size: cover;
+//  width: 100%;
+//  height: 100%;
+//  z-index: -1;
+//}
+
+.ferme-logo-img {
+  vertical-align: middle;
+  display: block;
+  width: 50%;
+  max-width: 400px;
+  height: $ferme-logo-height;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ferme-logo a {
+  width: 100%;
+  height: $ferme-logo-height;
+}
+
+.ferme-logo {
+  @extend .has-text-centered;
+  height: $ferme-logo-container-height;
+  display: flex;
+  align-items: center;
+}
+
+.ferme-logo address span {
+  font-size: 20px;
+}
+
+address span {
+  display: block;
+}
+
+.ferme-logo-bio {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.ferme-logo-bio span {
+  display: inline-block;
+}
+
+.ferme-logo-bio img {
+  height: 60px;
+  display: inline-block;
+}
+
+#fermemap {
+  height: 350px;
+}
+
+.ferme-navbar {
+  @extend .navbar;
+  @extend .has-shadow;
+  height: $ferme-navbar-height;
+}
+
+.ferme-navbar-container {
+  @extend .container;
+}
+
+.ferme-navbar-brand {
+  @extend .navbar-brand;
+}
+
+.ferme-navbar-item {
+  @extend .navbar-item;
+  @extend .is-uppercase;
+}
+
+.ferme-navbar-burger {
+  @extend .navbar-burger;
+}
+
+.ferme-navbar-menu {
+  @extend .navbar-menu;
+  align-items: center;
+  justify-content: center;
+}
+
+.ferme-map-container {
+  @extend .section;
+}
+
+.ferme-map {
+}
+
+.ferme-content {
+  @extend .content;
+}
+
+.ferme-footer {
+  @extend .footer;
+  padding: 1rem 1.5rem 1rem;
+}
+
+.ferme-footer-content {
+  @extend .content;
+  @extend .has-text-centered;
+}
+
+h1 {
+  @extend .title;
+}
+
+.ferme-columns {
+  @extend .columns;
+  @extend .is-multiline;
+}
+
+.ferme-column {
+  @extend .column;
+}
+
+.ferme-navbar-brand img {
+  width: 150px;
+}
+
+.ferme-nologo-nav.ferme-navbar-brand {
+  display: none;
+}
+
+.ferme-body {
+}
+
+.ferme-main {
+}
+
+.ferme-banner {
+  display: table-row;
+  height: 100%;
+}
+
+.ferme-banner-wrapper {
+  position: relative;
+  align-items: center;
+  min-height: 250px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ferme-banner img {
+  position: absolute;
+  top:-100%; left:0; right: 0; bottom:-100%;
+  margin: auto;
+}
+
+.ferme-content-img {
+  position: absolute;
+  top:-100%; left:0; right: 0; bottom:-100%;
+  margin: auto;
+}
+
+.ferme-title {
+  @extend .title;
+  @extend .has-text-centered;
+  @extend .is-uppercase;
+}
+
+.ferme-media {
+  @extend .media;
+  padding-top: 1rem;
+}
+
+.ferme-people-figure {
+}
+
+.ferme-people-img {
+  border-radius: 50%;
+  height: $ferme-people-img-size;
+  width: $ferme-people-img-size;
+  object-fit: cover;
+}
+
+.ferme-section {
+  @extend .section;
+  @extend .container;
+}
+
+.p {
+}
