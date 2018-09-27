@@ -1,3 +1,12 @@
 baseURL = "https://fermedegouet.fr/"
 languageCode = "fr-fr"
 title = "Ferme de Gouet"
+staticDir = "dist/static"
+publishDir = "dist/public"
+DefaultContentLanguage = "fr"
+
+[params]
+email = "contact@fermedegouet.fr"
+phone = "+33 6 46 43 72 89"
+address = [ "Ferme de Gouet", "42220 La Versanne" ]
+description = "Site de la Ferme de Gouet"
