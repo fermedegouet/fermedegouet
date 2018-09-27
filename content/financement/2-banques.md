@@ -15,5 +15,5 @@ est spécialisée dans la finance éthique. Elle fonctionne de la même manière
 qu'une banque: on peut placer de l'argent sur un compte épargne, ou emprunter,
 à la différence que l'ensemble des prêts accordés sont publiés chaque année, et
 servent uniquement pour des projets ayant une utilité sociale, écologique et/ou
-culturelle. Je vous encourage à aller y voir de plus prêt si vous ne connaissez
+culturelle. Je vous encourage à aller y voir de plus près si vous ne connaissez
 pas! Malheureusement, les taux proposés seraient trop élevés dans mon cas...
