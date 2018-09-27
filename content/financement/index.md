@@ -15,4 +15,5 @@ keywords:
 - biologique
 - la versanne
 - sipma
+type: financement
 ---

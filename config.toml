@@ -10,3 +10,5 @@ email = "contact@fermedegouet.fr"
 phone = "+33 6 46 43 72 89"
 address = [ "Ferme de Gouet", "42220 La Versanne" ]
 description = "Site de la Ferme de Gouet"
+pretTotal = 135000
+pretActuel = 10000
