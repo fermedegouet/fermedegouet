@@ -32,7 +32,7 @@
               {{ .Name }}
             </a>
             {{ end }}
-            <a href="{{ .Site.BaseURL }}#contact"  class="ferme-navbar-item">
+            <a href="{{ .Site.BaseURL | relURL }}#contact"  class="ferme-navbar-item">
               Contact
             </a>
           </div>

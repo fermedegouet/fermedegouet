@@ -23,7 +23,7 @@
   </div>
   */}}
   <div class="ferme-logo">
-    <a href="{{ .Site.BaseURL }}">
+    <a href="{{ .Site.BaseURL | relURL }}">
       <img class="ferme-logo-img" src="{{ "img/logo_ferme.svg" | relURL }}" alt="logo ferme" onerror="this.src='{{ "img/logo_ferme.png" | relURL }}'">
     </a>
   </div>
