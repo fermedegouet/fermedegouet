@@ -23,8 +23,8 @@ fauve, leurs yeux maquillés de noirs et leurs longs cils.
 
 - herbe -> patur'en pilat
 
-Je veux que cela se fasse dans les meilleures conditions possibles, et tenter
-de vous en apporter la garantie. Même si je pense que la vraie solution passe
-plutôt par une relation de confiance entre producteur et consommateur, la ferme
-entrera dès mon installation en conversion AB (label bio) et [Nature &
+Je veux que mon élevage se déroule dans les meilleures conditions possibles, et
+tenter de vous en apporter la garantie. Même si je pense que la vraie solution
+passe plutôt par une relation de confiance entre producteur et consommateur, la
+ferme entrera dès mon installation en conversion AB (label bio) et [Nature &
 Progrès](http://www.natureetprogres.org/).
