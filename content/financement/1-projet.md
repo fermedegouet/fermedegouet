@@ -30,9 +30,12 @@ J'ai choisi la race Aubrac, dont le berceau géographique se situe dans le
 Massif Central. Les vaches Aubrac sont reconnues pour leur rusticité, leur
 facilité de vêlage, leurs qualités maternelles et la qualité de leur viande. Et
 pour couronner le tout, elles ont une certaine élégance, avec leur robe
-fauve, leurs yeux maquillés de noirs et leurs longs cils.
+fauve et leurs yeux maquillés de noirs.
 
-- herbe -> patur'en pilat
+Les vaches sont des ruminants, leur alimentation repose sur l'herbe. L'herbe et
+les ressources ligneuses sont bien moins coûteuses à récolter que le foin, et
+bien moins encore que les céréales. Je réfléchis avec d'autres éleveurs du
+Pilat sur ces questions au sein du groupe **Pâtur'en Pilat**.
 
 Je veux que mon élevage se déroule dans les meilleures conditions possibles, et
 tenter de vous en apporter la garantie. Même si je pense que la vraie solution
