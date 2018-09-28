@@ -11,11 +11,11 @@ contrepartie vous aurez la fierté d'avoir contribué à lancer un projet qui, j
 l'espère, a du sens pour vous.
 
 Pour les projets agricoles, les taux pour les prêts à moyen terme sont en
-général entre **1** et **1.5%**, sur un compte courant on est en général à
-**0%**, et sur un livret à la Nef l'épargne vous rapporte **0.10%** (mais vous
+général entre **1** et **1,5%**, sur un compte courant on est en général à
+**0%**, et sur un livret à la Nef l'épargne vous rapporte **0,10%** (mais vous
 savez où est utilisé votre argent!). Je vous propose de choisir vous-même le
 taux d'intérêt qui vous convient, dans une fourchette entre **0%** (« J'adore
 ce que vous faites, et de toutes façons si je prête 100€, ça m'est égal de
-récupérer 5€ en plus au bout du compte. ») et **1.5%** (« Je suis plutôt
+récupérer 5€ en plus au bout du compte. ») et **1,5%** (« Je suis plutôt
 partant pour aider ce projet, mais ça reste un placement! Il y quand même
 l'inflation, et que va dire mon banquier? etc... »)
