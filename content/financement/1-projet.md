@@ -4,16 +4,27 @@ title: "Le projet en deux mots"
 
 Je souhaite reprendre en location une ferme d'élevage située sur la commune de
 La Versanne (42), avec comme activité principale l'élevage de vaches. Le but
-est bien de les élever en essayant de leur offrir les meilleures conditions de
-vie possibles, et pas de vendre des caissettes de viande. Cependant, pour
-pouvoir les nourrir (environ 14kg de foin par vache et par jour en hiver) et me
-nourrir (environ 700€/mois les deux premières années puis un SMIC/mois
-ensuite), je serai bien obligé d'en emmener à l'abattoir. C'est une étape bien
-triste, et en général peu respectueuse de l'animal. Je m'engage à travailler
-sur [cette question centrale qu'est
+pour moi est bien d'interagir avec elles, en essayant de leur offrir les
+meilleures conditions de vie possibles, et pas de vendre des caissettes de
+viande. Cependant, pour pouvoir les nourrir (environ 14kg de foin par vache et
+par jour en hiver) et me nourrir (environ 700€/mois les deux premières années
+puis un SMIC/mois ensuite), je serai bien obligé de limiter le nombre de bêtes
+par hectare, tout en développant une activité économique. J'ai choisi de
+produire de la viande, pour pouvoir assurer le travail nécessaire seul, tout en
+conservant du temps pour d'autres activités.
+
+Mon projet repose sur la vente directe, pour pouvoir me dégager un revenu
+correct, m'éloigner au temps que possible de l'industrie agroalimentaire, et
+développer des liens avec les consommateurs basés sur une alimentation de
+qualité.
+
+Le bout du voyage pour ces animaux passe aujourd'hui par l'abattoir. C'est une
+étape bien triste, et en général peu respectueuse de l'animal. Je m'engage à
+travailler sur [cette question centrale qu'est
 l'abattage](https://abattagealternatives.wordpress.com/) pour tenter, si ce
-n'est d'y apporter une réponse éthique, au moins de faire en sorte qu'il soit
-le moins traumatisant possible pour mes bêtes.
+n'est d'y apporter une réponse complètement satisfaisante d'un point de vue
+éthique, au moins de faire en sorte que cette dernière étape soit la moins
+traumatisante possible pour mes bêtes.
 
 J'ai choisi la race Aubrac, dont le berceau géographique se situe dans le
 Massif Central. Les vaches Aubrac sont reconnues pour leur rusticité, leur
