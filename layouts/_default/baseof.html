@@ -10,6 +10,7 @@
     <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Title }}{{ end }}" property="og:description">
     {{ block "head" . }}{{ end }}
     <link href="{{ "css/ferme.min.css" | relURL }}" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="{{ .Site.BaseURL | relURL }}favicon.ico">
   </head>
   <body class="ferme-body">
     <div class="ferme-header{{ block "ferme-header-classes" . }}{{ end }}">
