@@ -23,7 +23,7 @@ keywords:
   <div class="ferme-columns">
     <div class="column is-one-third">
       <p>
-        La ferme se situe sur la commune de <strong>La Versanne</strong>, entre 900 et 1200m d'altitude.
+        La ferme se situe sur la commune de <strong>La Versanne</strong>, dans la Loire, entre 900 et 1200m d'altitude.
       </p>
     </div>
     <div class="ferme-column is-two-thirds">
