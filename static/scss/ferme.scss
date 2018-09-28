@@ -19,6 +19,7 @@ $middle-green: #499f68;
 $section-padding: 3rem 1.5rem;
 //$navbar-background-color: $granny-smith-apple;
 //$navbar-item-hover-background-color: $tea-green;
+$navbar-item-active-background-color: hsl(0, 0%, 95%);
 
 @import "../../node_modules/bulma/bulma.sass";
 
@@ -252,4 +253,8 @@ h1 {
 
 .ferme-hidden {
   display: none;
+}
+
+.ferme-is-active {
+  @extend .is-active;
 }

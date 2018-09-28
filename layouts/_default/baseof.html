@@ -29,7 +29,7 @@
           <div class="ferme-navbar-menu" id="ferme-nav-menu">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main.ByWeight }}
-            <a href="{{ .URL }}"  class="ferme-navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
+            <a href="{{ .URL }}"  class="ferme-navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} ferme-is-active{{end}}">
               {{ .Name }}
             </a>
             {{ end }}
