@@ -30,6 +30,8 @@ js: npm
 		> $(TMP)/js/ferme-map.js
 	uglifyjs --compress --mangle -o $(TMP)/js/ferme-map.min.js $(TMP)/js/ferme-map.js
 	cp $(TMP)/js/ferme-map.min.js $(DIST_STATIC)/js
+	uglifyjs --compress --mangle -o $(TMP)/js/ferme-countdown.min.js $(STATIC)/js/ferme-countdown.js
+	cp $(TMP)/js/ferme-countdown.min.js $(DIST_STATIC)/js
 
 fonts:
 	mkdir -p $(DIST_STATIC)/fonts
