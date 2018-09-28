@@ -1,6 +1,8 @@
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
 
 // local variables
+$ferme-logo-height-mobile: 150px;
+$ferme-logo-container-height-mobile: $ferme-logo-height-mobile + 20px;
 $ferme-logo-height: 200px;
 $ferme-logo-container-height: $ferme-logo-height + 20px;
 $ferme-navbar-height: 50px;
@@ -38,7 +40,12 @@ html, body {
   position: relative;
   text-align: center;
   display: table-row;
-  height: $ferme-logo-container-height;
+  @include until($tablet) {
+    height: $ferme-logo-container-height-mobile;
+  }
+  @include from($tablet) {
+    height: $ferme-logo-container-height;
+  }
   vertical-align: middle;
   justify-content: center;
 }
@@ -60,21 +67,28 @@ html, body {
 .ferme-logo-img {
   vertical-align: middle;
   display: block;
-  width: 50%;
-  max-width: 400px;
-  height: $ferme-logo-height;
-  overflow: hidden;
+  height: 100%;
   margin: 0 auto;
 }
 
 .ferme-logo a {
   width: 100%;
-  height: $ferme-logo-height;
+  @include until($tablet) {
+    height: $ferme-logo-height-mobile;
+  }
+  @include from($tablet) {
+    height: $ferme-logo-height;
+  }
 }
 
 .ferme-logo {
   @extend .has-text-centered;
-  height: $ferme-logo-container-height;
+  @include until($tablet) {
+    height: $ferme-logo-container-height-mobile;
+  }
+  @include from($tablet) {
+    height: $ferme-logo-container-height;
+  }
   display: flex;
   align-items: center;
 }
