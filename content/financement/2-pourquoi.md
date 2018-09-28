@@ -5,7 +5,7 @@ title: "Un besoin de financement"
 Pour pouvoir démarrer mon projet d'élevage sur la ferme de Gouet, j'ai besoin
 d'argent :
 
-- Achat des animaux (22 vaches, un taureau et 5 génisses aubrac) : **58 000€**
+- Achat des animaux (22 vaches, un taureau et 5 génisses Aubrac) : **58 000€**
 - Aménagement des bâtiments (qui étaient utilisés pour des brebis) : **29 000€**
 - Reprise du matériel (tracteur, télescopique, matériel de fenaison, petit
   matériel de clôture, parts de matériels en propriété avec d'autres
@@ -17,14 +17,16 @@ d'argent :
 
 Ce qui nous fait un total de… **197 000€**. Une sacrée somme !
 
-Heureusement j'ai également un peu de ressources :
+<br />
+
+Heureusement, j'ai également un peu de ressources :
 
 - Une aide pour l'aménagement des bâtiments de **20 000€**
 - La **dotation jeune agriculteur** (DJA, aide de l'Europe pour favoriser les
   installations de jeunes agriculteurs) : **42 000€**
 
 Soit un total de **62 000€** pour débuter l'activité. J'ai également un peu
-d'épargne (environ **35 000€**) mais je préfère la conserver en sécurité, pour
+d'épargne (environ **35 000€**), mais je préfère la conserver en sécurité, pour
 faire face à des imprévus comme une très mauvaise récolte de foin, un gros
 problème mécanique sur le tracteur ou autre). Vous l'aurez compris, le compte
 n'y est pas : il manque **135 000€**. Je pourrais faire le choix de limiter (un
