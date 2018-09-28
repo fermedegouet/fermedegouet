@@ -15,3 +15,5 @@ pretActuel = 10000
 tauxMin = 0
 tauxMax = 1.5
 dateLimite = "2018-12-31"
+longitude = 45.311703
+latitude = 4.499096

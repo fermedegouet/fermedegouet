@@ -1,6 +1,3 @@
-var longitude = 45.311703;
-var latitude = 4.499096;
-
 var map = L.map('fermemap').setView([longitude, latitude], 12);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

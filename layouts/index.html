@@ -3,6 +3,10 @@
 {{ end }}
 
 {{ define "footer" }}
+<script>
+  var longitude = {{ .Site.Params.longitude }}
+  var latitude = {{ .Site.Params.latitude }}
+</script>
 <script src="{{ "js/ferme-map.min.js" | relURL }}"></script>
 {{ end }}
 
