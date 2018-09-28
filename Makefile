@@ -41,6 +41,7 @@ fonts:
 img:
 	mkdir -p $(DIST_STATIC)/img
 	cp $(STATIC)/img/* $(DIST_STATIC)/img/
+	cp $(STATIC)/favicon.ico $(DIST_STATIC)/
 	cp node_modules/leaflet/dist/images/* $(DIST_STATIC)/img/
 
 site:
