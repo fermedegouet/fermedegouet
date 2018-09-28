@@ -38,7 +38,7 @@ keywords:
 <div class="ferme-section">
   <h1 class="ferme-title" id="l-eleveur">L'éleveur</h1>
   <p>
-    L'équipe est plutôt restreinte pour l'instant, mais elle a pour vocation de s'agrandir!
+    L'équipe est plutôt restreinte pour l'instant, mais elle a pour vocation de s'agrandir !
   </p>
   <div class="ferme-media">
     <figure class="media-left ferme-people-figure">
