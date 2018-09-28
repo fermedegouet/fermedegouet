@@ -124,6 +124,7 @@ address span {
   @extend .navbar;
   @extend .has-shadow;
   height: $ferme-navbar-height;
+  font-size: large;
 }
 
 .ferme-navbar-container {
