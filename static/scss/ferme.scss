@@ -53,6 +53,12 @@ html, body {
   justify-content: center;
 }
 
+
+@keyframes bounce{
+     from {}
+     50%  {transform: translateY(-10px);}
+     to   {}
+}
 //#ferme-header-logo:after {
 //  content: "";
 //  position: absolute;
@@ -267,4 +273,18 @@ h1 {
 
 .ferme-map-column {
   display: block;
+}
+
+.ferme-top-arrow-container {
+  text-align: center;
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: bottom 2s;
+  animation: bounce 1.5s ease infinite;
+}
+
+.ferme-top-arrow {
+  color: white;
 }

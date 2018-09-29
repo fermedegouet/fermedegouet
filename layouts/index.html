@@ -4,6 +4,15 @@
 
 {{ define "footer" }}
 <script>
+  window.addEventListener("scroll", function(){
+    if (document.getElementById("ferme-top-arrow").parentNode.scrollHeight < window.innerHeight + window.scrollY) {
+      document.getElementById("ferme-top-arrow").style.bottom = "-100%";
+    } else {
+      document.getElementById("ferme-top-arrow").style.bottom = "0";
+    }
+  }, { passive: true });
+</script>
+<script>
   var longitude = {{ .Site.Params.longitude }}
   var latitude = {{ .Site.Params.latitude }}
 </script>
@@ -39,6 +48,11 @@
   <div class="ferme-banner-wrapper">
     <img src="{{ "img/terres.jpg" | relURL }}" alt="Terres" />
   </div>
+</div>
+<div id="ferme-top-arrow" class="ferme-top-arrow-container">
+  <a href="#le-projet-en-deux-mots">
+    <i class="fas fa-arrow-circle-down fa-2x ferme-top-arrow"></i>
+  </a>
 </div>
 {{ end }}
 
