@@ -1,1 +1,1 @@
-  <img src="{{ .Get "src" | relURL }}" class="{{ if (.Get "class") }}{{ with .Get "class"}}{{.}}{{ end }}{{  else }}ferme-content-img{{ end }}"{{ if (.Get "alt") }} alt="{{ with .Get "alt"}}{{.}}{{ end }}"{{ end }} />
+<img src="{{ .Get "src" | relURL }}" class="{{ if (.Get "class") }}{{ with .Get "class"}}{{.}}{{ end }}{{  else }}ferme-content-img{{ end }}"{{ if (.Get "alt") }} alt="{{ with .Get "alt"}}{{.}}{{ end }}"{{ end }} />

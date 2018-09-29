@@ -37,13 +37,19 @@
 {{ define "banner" }}
 <div class="ferme-banner">
   <div class="ferme-banner-wrapper">
-    <img src="{{ "img/terres.jpg" | relURL }}" class="ferme-content-img" alt="Terres" />
+    <img src="{{ "img/terres.jpg" | relURL }}" alt="Terres" />
   </div>
 </div>
 {{ end }}
 
 {{ define "main" }}
 <div class="ferme-content">
+  {{ range sort (where .Data.Pages "Type" "homepage") "Path" }}
+  <div class="ferme-section">
+    <h1 class="ferme-title" id="{{ .Title | urlize }}">{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+  {{ end }}
   {{ .Content }}
 </div>
 <div class="ferme-map-container">
