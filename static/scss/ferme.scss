@@ -247,6 +247,10 @@ h1 {
   @extend .container;
 }
 
+.ferme-box {
+  @extend .box;
+}
+
 .ferme-no-right-padding-on-desktop {
   @include from($tablet) {
     padding-right: 0;
