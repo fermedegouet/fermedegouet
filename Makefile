@@ -35,7 +35,7 @@ js: npm
 
 fonts:
 	mkdir -p $(DIST_STATIC)/fonts
-	#cp -R $(STATIC)/fonts/* $(DIST_STATIC)/fonts/
+	cp -R $(STATIC)/fonts/* $(DIST_STATIC)/fonts/
 	cp -R node_modules/@fortawesome/fontawesome-free/webfonts/* $(DIST_STATIC)/fonts/
 
 img:
