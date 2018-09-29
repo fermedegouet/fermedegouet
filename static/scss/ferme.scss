@@ -153,11 +153,6 @@ address span {
   justify-content: center;
 }
 
-.ferme-map-container {
-  @extend .section;
-  padding-right: 0;
-}
-
 .ferme-map {
 }
 
@@ -186,6 +181,8 @@ h1 {
 
 .ferme-column {
   @extend .column;
+  display: flex;
+  align-items: center;
 }
 
 .ferme-navbar-brand img {
@@ -250,10 +247,20 @@ h1 {
   @extend .container;
 }
 
+.ferme-no-right-padding-on-desktop {
+  @include from($tablet) {
+    padding-right: 0;
+  }
+}
+
 .ferme-hidden {
   display: none;
 }
 
 .ferme-is-active {
   @extend .is-active;
+}
+
+.ferme-map-column {
+  display: block;
 }

@@ -52,13 +52,13 @@
   {{ end }}
   {{ .Content }}
 </div>
-<div class="ferme-map-container">
+<div class="ferme-section ferme-no-right-padding-on-desktop">
   <h1 id="contact" class="ferme-title">Contact</h1>
   <div class="ferme-columns">
     <div class="ferme-column is-one-third">
       {{ partial "address.html" . }}
     </div>
-    <div class="ferme-column is-two-thirds">
+    <div class="ferme-column is-two-thirds ferme-map-column">
       <div id="fermemap"></div>
     </div>
   </div>
