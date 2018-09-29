@@ -18,7 +18,7 @@
     <div class="field-body">
       <div class="field">
         <div class="control is-expanded has-icons-left">
-          <input class="input" type="text" placeholder="Prénom" name="first-name">
+          <input class="input" type="text" placeholder="Prénom" name="first-name" required>
           <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
           </span>
@@ -26,7 +26,7 @@
       </div>
       <div class="field">
         <div class="control is-expanded has-icons-left">
-          <input class="input" type="text" placeholder="Nom" name="last-name">
+          <input class="input" type="text" placeholder="Nom" name="last-name" required>
           <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
           </span>
@@ -41,7 +41,7 @@
     <div class="field-body">
       <div class="field">
         <div class="control is-expanded has-icons-left">
-          <input class="input" type="text" placeholder="2 rue des Acacias, 42000 Saint-Étienne" name="address">
+          <input class="input" type="text" placeholder="2 rue des Acacias, 42000 Saint-Étienne" name="address" required>
           <span class="icon is-small is-left">
             <i class="fas fa-map-marked"></i>
           </span>
@@ -55,15 +55,11 @@
     </div>
     <div class="field-body">
       <div class="field">
-        <div class="control is-expanded has-icons-left has-icons-right">
-          <input class="input is-danger" type="email" placeholder="coucou@" name="email">
+        <div class="control is-expanded has-icons-left">
+          <input class="input" type="email" placeholder="coucou@" name="email" required>
           <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
           </span>
-          <span class="icon is-small is-right">
-            <i class="fas fa-exclamation-triangle"></i>
-          </span>
-          <p class="help is-danger">Cette adresse email est invalide</p>
         </div>
       </div>
     </div>
@@ -75,7 +71,7 @@
     <div class="field-body">
       <div class="field has-addons">
         <div class="control">
-          <input class="input" type="number" step="100" min="100" max="{{ .Site.Params.pretTotal }}" placeholder="1000" name="amount">
+          <input class="input" type="number" step="100" min="100" max="{{ .Site.Params.pretTotal }}" placeholder="1000" name="amount" required>
         </div>
         <div class="control">
           <a class="button is-static">
@@ -92,7 +88,7 @@
     <div class="field-body">
       <div class="field has-addons">
         <div class="control">
-          <input class="input" type="number" step="0.1" min="{{ .Site.Params.tauxMin }}" max="{{ .Site.Params.tauxMax }}" placeholder="0" value="0" name="rate">
+          <input class="input" type="number" step="0.1" min="{{ .Site.Params.tauxMin }}" max="{{ .Site.Params.tauxMax }}" placeholder="0" value="0" name="rate" required>
         </div>
         <div class="control">
           <a class="button is-static">
@@ -143,6 +139,7 @@
       <div class="field">
         <div class="control">
           <button type="submit" class="button is-primary">Valider</button>
+          <p>Pour tout problème, n'hésitez pas à me contacter : <a href="mailto:{{ .Site.Params.email }}">&lt;Félix Sipma&gt;</a></p>
         </div>
       </div>
     </div>
