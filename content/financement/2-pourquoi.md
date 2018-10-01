@@ -11,9 +11,9 @@ d'argent :
   matériel de clôture, parts de matériels en propriété avec d'autres
   agriculteurs) et achat de matériel nécessaire à l'activité de vente directe
   (caisson frigorifique pour les livraisons, petite remorque bétaillère) :
-  **63 000€**
+  **65 000€**
 - Reprise des stocks (foin, un peu de paille et de céréales) : **7 000€**
-- Fonds de roulement : **40 000€**
+- Fonds de roulement : **38 000€**
 
 Ce qui nous fait un total de… **197 000€**. Une sacrée somme !
 

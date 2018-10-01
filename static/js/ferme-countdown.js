@@ -12,7 +12,7 @@ window.onload = function () {
         clearInterval(x);
         document.getElementById("ferme-countdown").innerHTML = "Terminé !";
       } else {
-        document.getElementById("ferme-countdown").innerHTML = days + " jours, " + hours + " heures, " + minutes + " minutes et " + seconds + " secondes ";
+        document.getElementById("ferme-countdown").innerHTML = days + " jours, " + hours + " heures, " + minutes + " minutes et " + seconds + " secondes";
       }
   }, 1000);
 }
