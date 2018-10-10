@@ -1,5 +1,5 @@
 <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-  <div class="ferme-hidden is-horizontal">
+  <div class="ferme-hidden">
     <div class="field-label is-normal">
       <label class="label">Ne pas remplir si vous êtes un humain</label>
     </div>
@@ -36,14 +36,87 @@
   </div>
   <div class="field is-horizontal">
     <div class="field-label is-normal">
+      <label class="label">Date et lieu de naissance</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="field-body">
+          <div class="field">
+            <div class="control is-expanded has-icons-left">
+              <input class="input" type="date" name="birthdate" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-birthday-cake"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control is-expanded has-icons-left">
+              <input class="input" type="text" name="birthcity" placeholder="Paris (75)" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-birthday-cake"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <p class="help">(Nécessaire pour pré-remplir la convention de prêt)</p>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
       <label class="label">Adresse</label>
     </div>
     <div class="field-body">
       <div class="field">
         <div class="control is-expanded has-icons-left">
-          <input class="input" type="text" placeholder="2 rue des Acacias, 42000 Saint-Étienne" name="address" required>
+          <input class="input" type="text" placeholder="2 rue des Acacias" name="address" required>
           <span class="icon is-small is-left">
             <i class="fa fa-map"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Code postal</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control is-expanded has-icons-left">
+          <input class="input" type="text" placeholder="42000" name="postalcode" required>
+          <span class="icon is-small is-left">
+            <i class="fa fa-map"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Ville</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control is-expanded has-icons-left">
+          <input class="input" type="text" placeholder="Saint-Étienne" name="city" required>
+          <span class="icon is-small is-left">
+            <i class="fa fa-map"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Pays</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control is-expanded has-icons-left">
+          <input class="input" type="text" value="France" name="country" required>
+          <span class="icon is-small is-left">
+            <i class="fa fa-globe"></i>
           </span>
         </div>
       </div>
@@ -104,7 +177,7 @@
     <div class="field-body">
       <div class="field">
         <div class="control">
-          <input type="checkbox" name="meet" checked>
+          <input type="checkbox" name="meat" checked>
 
           Je suis intéressé pour me faire rembourser une partie de mon prêt en
           colis de viande (ou en éventuels autres produits de la ferme).
