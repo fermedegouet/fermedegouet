@@ -175,6 +175,18 @@ address span {
   @extend .content;
 }
 
+.ferme-notification-container {
+  padding-top: 2rem;
+  @extend .container;
+}
+
+.ferme-notification {
+  @extend .notification;
+}
+
+.ferme-notification-body {
+}
+
 .ferme-footer {
   @extend .footer;
   padding: 1rem 1.5rem 1rem;

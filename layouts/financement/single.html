@@ -1,10 +1,18 @@
 {{ define "head" }}
 <script>var countdownDate = new Date("{{ .Site.Params.dateLimite }}");</script>
 <script src="{{ "js/ferme-countdown.min.js" | relURL }}"></script>
+<script src="{{ "js/ferme-crowdfunding-form.min.js" | relURL }}"></script>
 {{ end }}
 
 {{ define "main" }}
 <div class="ferme-content">
+  <div id="crowdfunding-form-message" class="ferme-notification-container ferme-hidden">
+    <div class="ferme-notification">
+      <button class="delete"></button>
+      <div class="ferme-notification-body">
+      </div>
+    </div>
+  </div>
   <div class="ferme-section">
     <div class="ferme-box">
       <h1 class="ferme-title pb-2">{{ .Title }}</h1>
