@@ -4,7 +4,7 @@ title: "Les vaches"
 
 {{% columns %}}
 {{% column-two-thirds %}}
-<figure>
+<figure class="ferme-figure">
   {{< img src="img/vaches.jpg" alt="Les vaches">}}
 </figure>
 {{% /column-two-thirds %}}

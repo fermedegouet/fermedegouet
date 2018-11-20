@@ -260,6 +260,12 @@ h1 {
   padding-top: 1rem;
 }
 
+// remove 2px margin for .content figure
+.content .ferme-figure {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .ferme-people-figure {
 }
 
