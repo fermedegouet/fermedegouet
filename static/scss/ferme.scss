@@ -247,7 +247,12 @@ h1 {
   bottom: -100%;
   margin: auto;
   min-height: 100%;
+  width: 100%;
   object-fit: cover;
+  // bug: banner height bumping when url bar is hidding on mobile.
+  // https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
+  height: 100vh;
+  transition: height 2s ease-out;
 }
 
 .ferme-content-img {
