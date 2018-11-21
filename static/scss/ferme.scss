@@ -236,10 +236,6 @@ h1 {
   align-items: center;
   min-height: 250px;
   height: 100%;
-  // transition time workaround for banner resizing on mobile when url bar is
-  // hidding.
-  // https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
-  transition: height 1s;
   overflow: hidden;
 }
 
