@@ -18,6 +18,8 @@ $ferme-logo-height: 200px;
 $ferme-logo-container-height: $ferme-logo-height + 20px;
 $ferme-navbar-height: 50px;
 $ferme-people-img-size: 160px;
+$ferme-banner-height: 100%;
+$ferme-banner-height-mobile: 350px;
 
 $granny-smith-apple: #b3d89c;
 $tea-green: #d0efb1;
@@ -44,6 +46,9 @@ html, body {
 
 .ferme-header.ferme-header-with-logo {
   height: 100%;
+  @include until($tablet) {
+    max-height: $ferme-logo-container-height-mobile + $ferme-navbar-height + $ferme-banner-height-mobile;
+  }
   width: 100%;
   display: table;
 }
@@ -228,22 +233,30 @@ h1 {
 
 .ferme-banner {
   display: table-row;
-  height: 100%;
+  @include until($tablet) {
+    height: $ferme-banner-height-mobile;
+  }
+  @include from($tablet) {
+    height: $ferme-banner-height;
+  }
 }
 
 .ferme-banner-wrapper {
   position: relative;
   align-items: center;
   min-height: 250px;
-  height: 100%;
+  @include until($tablet) {
+    height: $ferme-banner-height-mobile;
+  }
+  @include from($tablet) {
+    height: $ferme-banner-height;
+  }
   overflow: hidden;
   background-image: url("../img/terres.jpg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  // bug: banner height bumping when url bar is hidding on mobile.
-  // https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
 }
 
 .ferme-content-img {
