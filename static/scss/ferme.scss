@@ -19,8 +19,11 @@ $ferme-logo-container-height: $ferme-logo-height + 20px;
 $ferme-navbar-height: 50px;
 $ferme-people-img-size: 160px;
 $ferme-people-img-size-mobile: 80px;
+$ferme-banner-min-height: 250px;
 $ferme-banner-height: 100%;
 $ferme-banner-height-mobile: 350px;
+$ferme-banner-img-src: url("../img/terres.jpg");
+$ferme-map-height: 350px;
 
 $granny-smith-apple: #b3d89c;
 $tea-green: #d0efb1;
@@ -141,7 +144,7 @@ address span {
 }
 
 #fermemap {
-  height: 350px;
+  height: $ferme-map-height;
 }
 
 .ferme-navbar {
@@ -245,7 +248,7 @@ h1 {
 .ferme-banner-wrapper {
   position: relative;
   align-items: center;
-  min-height: 250px;
+  min-height: $ferme-banner-min-height;
   @include until($tablet) {
     height: $ferme-banner-height-mobile;
   }
@@ -253,7 +256,7 @@ h1 {
     height: $ferme-banner-height;
   }
   overflow: hidden;
-  background-image: url("../img/terres.jpg");
+  background-image: $ferme-banner-img-src;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
