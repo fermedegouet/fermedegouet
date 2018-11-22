@@ -18,7 +18,7 @@
       <h1 class="ferme-title pb-2">{{ .Title }}</h1>
       {{- $percent := lang.NumFmt 0 (div (mul .Site.Params.pretActuel 100) .Site.Params.pretTotal) -}}
       <progress class="progress is-large is-primary" value="{{ .Site.Params.pretActuel }}" max="{{ .Site.Params.pretTotal }}">{{ $percent }}%</progress>
-      <p>Montant total réuni: {{ .Site.Params.pretActuel }}€ sur {{ .Site.Params.pretTotal }}€, soit <strong>{{ $percent }}%</strong>.</p>
+      <p>Montant total réuni : {{ .Site.Params.pretActuel }}€ sur {{ .Site.Params.pretTotal }}€, soit <strong>{{ $percent }}%</strong>.</p>
       <p>Date limite : {{ .Site.Params.dateLimite }}. Plus que <span id="ferme-countdown"></span>.</p>
       <p><a href="#formulaire">N'hésitez pas à participer !</a></p>
     </div>
