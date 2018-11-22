@@ -314,6 +314,12 @@ h1 {
   }
 }
 
+.ferme-no-right-padding-on-desktop .ferme-columns {
+  @include from($tablet) {
+    margin-right: 0;
+  }
+}
+
 .ferme-hidden {
   display: none;
 }
@@ -324,6 +330,9 @@ h1 {
 
 .ferme-map-column {
   display: block;
+  @include from($tablet) {
+    padding-right: 0;
+  }
 }
 
 .ferme-top-arrow-container {
