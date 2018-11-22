@@ -237,22 +237,13 @@ h1 {
   min-height: 250px;
   height: 100%;
   overflow: hidden;
-}
-
-.ferme-banner img {
-  position: absolute;
-  top: -100%;
-  left: 0;
-  right: 0;
-  bottom: -100%;
-  margin: auto;
-  min-height: 100%;
-  width: 100%;
-  object-fit: cover;
+  background-image: url("../img/terres.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   // bug: banner height bumping when url bar is hidding on mobile.
   // https://stackoverflow.com/questions/37112218/css3-100vh-not-constant-in-mobile-browser
-  height: 100vh;
-  transition: height 2s ease-out;
 }
 
 .ferme-content-img {
