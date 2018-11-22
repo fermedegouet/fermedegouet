@@ -18,6 +18,7 @@ $ferme-logo-height: 200px;
 $ferme-logo-container-height: $ferme-logo-height + 20px;
 $ferme-navbar-height: 50px;
 $ferme-people-img-size: 160px;
+$ferme-people-img-size-mobile: 80px;
 $ferme-banner-height: 100%;
 $ferme-banner-height-mobile: 350px;
 
@@ -284,8 +285,14 @@ h1 {
 
 .ferme-people-img {
   border-radius: 50%;
-  height: $ferme-people-img-size;
-  width: $ferme-people-img-size;
+  @include until($tablet) {
+    height: $ferme-people-img-size-mobile;
+    width: $ferme-people-img-size-mobile;
+  }
+  @include from($tablet) {
+    height: $ferme-people-img-size;
+    width: $ferme-people-img-size;
+  }
   object-fit: cover;
 }
 
