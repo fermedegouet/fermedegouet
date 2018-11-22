@@ -21,6 +21,9 @@ css: npm
 	csso $(TMP)/css/ferme-map.css --output $(TMP)/css/ferme-map.min.css
 	cp $(TMP)/css/ferme-map.min.css $(DIST_STATIC)/css/
 
+sass-watch:
+	node-sass --watch $(STATIC)/scss/ferme.scss $(DIST_STATIC)/css/ferme.min.css
+
 js: npm
 	mkdir -p $(TMP)/js/
 	mkdir -p $(DIST_STATIC)/js
