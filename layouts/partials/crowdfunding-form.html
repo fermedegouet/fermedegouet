@@ -1,4 +1,4 @@
-<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+<form id="crowdfunding-form" name="crowdfunding" method="POST">
   <div class="ferme-hidden">
     <div class="field-label is-normal">
       <label class="label">Ne pas remplir si vous êtes un humain</label>
@@ -6,7 +6,7 @@
     <div class="field-body">
       <div class="field">
         <div class="control">
-          <input name="bot-field" />
+          <input name="botfield" />
         </div>
       </div>
     </div>
@@ -18,7 +18,7 @@
     <div class="field-body">
       <div class="field">
         <div class="control is-expanded has-icons-left">
-          <input class="input" type="text" placeholder="Prénom" name="first-name" required>
+          <input class="input" type="text" placeholder="Prénom" name="firstname" required>
           <span class="icon is-small is-left">
             <i class="fa fa-user"></i>
           </span>
@@ -26,7 +26,7 @@
       </div>
       <div class="field">
         <div class="control is-expanded has-icons-left">
-          <input class="input" type="text" placeholder="Nom" name="last-name" required>
+          <input class="input" type="text" placeholder="Nom" name="lastname" required>
           <span class="icon is-small is-left">
             <i class="fa fa-user-o"></i>
           </span>
@@ -132,6 +132,21 @@
           <input class="input" type="email" placeholder="coucou@" name="email" required>
           <span class="icon is-small is-left">
             <i class="fa fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Téléphone</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control is-expanded has-icons-left">
+          <input class="input" type="tel" placeholder="06 06 06 06 06" name="phone" required>
+          <span class="icon is-small is-left">
+            <i class="fa fa-phone"></i>
           </span>
         </div>
       </div>
