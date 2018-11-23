@@ -17,3 +17,4 @@ tauxMax = 1.5
 dateLimite = "2018-12-01"
 longitude = 45.311703
 latitude = 4.499096
+crowdfundingURL = "http://127.0.0.1:5432"
