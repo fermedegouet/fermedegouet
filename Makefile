@@ -3,7 +3,6 @@ PATH := $(shell npm bin):$(PATH)
 STATIC=./static
 DIST_STATIC=./dist/static
 TMP=./dist/tmp
-IMAGES=terres.jpg chaussitre2.jpg vaches.jpg
 
 build: npm css js fonts img img-resize site
 
@@ -49,11 +48,11 @@ img:
 	cp node_modules/leaflet/dist/images/* $(DIST_STATIC)/img/
 
 img-resize:
-	for image in $(IMAGES) ; do \
-		convert -resize 768x $(STATIC)/img/$$image $(DIST_STATIC)/img/$${image%.jpg}_768.jpg; \
-		convert -resize 1024x $(STATIC)/img/$$image $(DIST_STATIC)/img/$${image%.jpg}_1024.jpg; \
-		convert -resize 1216x $(STATIC)/img/$$image $(DIST_STATIC)/img/$${image%.jpg}_1216.jpg; \
-		convert -resize 1408x $(STATIC)/img/$$image $(DIST_STATIC)/img/$${image%.jpg}_1408.jpg; \
+	for image in $(STATIC)/img/*.jpg ; do \
+		convert -resize 768x $$image $$(echo -n $${image%.jpg}_768.jpg | sed -e 's%$(STATIC)%$(DIST_STATIC)%') ; \
+		convert -resize 1024x $$image $$(echo -n $${image%.jpg}_1024.jpg | sed -e 's%$(STATIC)%$(DIST_STATIC)%') ; \
+		convert -resize 1216x $$image $$(echo -n $${image%.jpg}_1216.jpg | sed -e 's%$(STATIC)%$(DIST_STATIC)%') ; \
+		convert -resize 1408x $$image $$(echo -n $${image%.jpg}_1408.jpg | sed -e 's%$(STATIC)%$(DIST_STATIC)%') ; \
 	done
 
 site:
