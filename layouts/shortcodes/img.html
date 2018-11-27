@@ -1,1 +1,7 @@
-<img src="{{ .Get "src" | relURL }}" class="{{ if (.Get "class") }}{{ with .Get "class"}}{{.}}{{ end }}{{  else }}ferme-content-img{{ end }}"{{ if (.Get "alt") }} alt="{{ with .Get "alt"}}{{.}}{{ end }}"{{ end }} />
+<picture>
+  <source srcset="{{ .Get "src" | replaceRE "^(.*)\\.jpg" "${1}_768.jpg" | relURL }}" media="(max-width: 768px)">
+  <source srcset="{{ .Get "src" | replaceRE "^(.*)\\.jpg" "${1}_1024.jpg" | relURL }}" media="(max-width: 1023px)">
+  <source srcset="{{ .Get "src" | replaceRE "^(.*)\\.jpg" "${1}_1216.jpg" | relURL }}" media="(max-width: 1215px)">
+  <source srcset="{{ .Get "src" | replaceRE "^(.*)\\.jpg" "${1}_1408.jpg" | relURL }}" media="(max-width: 1407px)">
+  <img src="{{ .Get "src" | relURL }}" class="{{ if (.Get "class") }}{{ with .Get "class"}}{{.}}{{ end }}{{  else }}ferme-content-img{{ end }}"{{ if (.Get "alt") }} alt="{{ with .Get "alt"}}{{.}}{{ end }}"{{ end }} />
+</picture>

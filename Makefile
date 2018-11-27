@@ -3,8 +3,9 @@ PATH := $(shell npm bin):$(PATH)
 STATIC=./static
 DIST_STATIC=./dist/static
 TMP=./dist/tmp
+IMAGES=terres.jpg chaussitre2.jpg vaches.jpg
 
-build: npm css js fonts img site
+build: npm css js fonts img img-resize site
 
 npm:
 	npm install
@@ -46,6 +47,14 @@ img:
 	cp $(STATIC)/img/* $(DIST_STATIC)/img/
 	cp $(STATIC)/favicon.ico $(DIST_STATIC)/
 	cp node_modules/leaflet/dist/images/* $(DIST_STATIC)/img/
+
+img-resize:
+	for image in $(IMAGES) ; do \
+		convert -resize 768x $(STATIC)/img/$$image $(DIST_STATIC)/img/$${image%.jpg}_768.jpg; \
+		convert -resize 1024x $(STATIC)/img/$$image $(DIST_STATIC)/img/$${image%.jpg}_1024.jpg; \
+		convert -resize 1216x $(STATIC)/img/$$image $(DIST_STATIC)/img/$${image%.jpg}_1216.jpg; \
+		convert -resize 1408x $(STATIC)/img/$$image $(DIST_STATIC)/img/$${image%.jpg}_1408.jpg; \
+	done
 
 site:
 	hugo
