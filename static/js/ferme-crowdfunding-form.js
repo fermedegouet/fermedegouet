@@ -1,7 +1,8 @@
 window.onload = function () {
   // countdown
   setInterval(function() {
-    var now = new Date().getTime();
+    var nowDate = new Date()
+    var now = nowDate.getTime();
     var range = countdownDate.getTime() - now;
 
     var days = Math.floor(range / (1000 * 60 * 60 * 24));
@@ -9,11 +10,10 @@ window.onload = function () {
     var minutes = Math.floor((range % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((range % (1000 * 60)) / 1000);
 
-    if (range < 0) {
-      clearInterval(x);
+    if (countdownDate < nowDate) {
       document.getElementById("ferme-countdown").innerHTML = "Terminé !";
     } else {
-      document.getElementById("ferme-countdown").innerHTML = days + " jours, " + hours + " heures, " + minutes + " minutes et " + seconds + " secondes";
+      document.getElementById("ferme-countdown").innerHTML = "Plus que : " + days + " jours, " + hours + " heures, " + minutes + " minutes et " + seconds + " secondes.";
     }
   }, 1000);
 
