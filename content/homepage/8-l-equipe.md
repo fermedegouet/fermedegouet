@@ -12,7 +12,7 @@ L'équipe est plutôt restreinte pour l'instant, mais elle a pour vocation de s'
     <div class="content">
       <strong>Félix SIPMA</strong>
       <br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      J'ai grandi en Lozère puis je suis parti en ville pour étudier l'informatique théorique. Un beau jour, j'ai eu envie de changer d'horizon, j'ai passé un bac pro agricole et je me suis pris de passion pour le monde paysan, et l'élevage de vaches en particulier.
     </div>
   </div>
 </div>
