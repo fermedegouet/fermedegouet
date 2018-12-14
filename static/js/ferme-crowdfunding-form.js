@@ -55,6 +55,8 @@ window.onload = function () {
       }
     }
 
+    console.debug(data);
+
     // construct an HTTP request
     var xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action, true);
@@ -64,27 +66,27 @@ window.onload = function () {
     xhr.send(JSON.stringify(data));
 
     function submissionComplete() {
-      // done TODO
-      console.log(JSON.stringify(data));
       submitbutton.classList.remove('is-loading');
-      messagebody.innerHTML = "L'envoi du formulaire a réussi. " + this.responseText;
-      messagebox.classList.add('is-success');
+      if (this.readyState==4 && this.status==200) {
+        messagebody.innerHTML = "L'envoi du formulaire a réussi. " + this.responseText;
+        messagebox.classList.add('is-success');
+      } else {
+        messagebody.innerHTML = "L'envoi du formulaire a échoué. Merci de me contacter directement à l'adresse <a href=\"mailto:contact@fermedegouet.fr?subject=Erreur dans le formulaire sur fermedegouet.fr&body=" + this.responseText + "\">contact@fermedegouet.fr</a> avec ce message d'erreur : " + this.responseText;
+        messagebox.classList.add('is-danger');
+      }
       message.classList.remove('ferme-hidden');
       message.scrollIntoView();
     };
 
     function submissionFailed() {
-      // done TODO
-      console.log(JSON.stringify(data));
       submitbutton.classList.remove('is-loading');
-      messagebody.innerHTML = "L'envoi du formulaire a échoué. " + this.responseText;
+      messagebody.innerHTML = "L'envoi du formulaire a échoué. Merci de me contacter directement à l'adresse <a href=\"mailto:contact@fermedegouet.fr\">contact@fermedegouet.fr</a>" + this.responseText;
       messagebox.classList.add('is-danger');
       message.classList.remove('ferme-hidden');
       message.scrollIntoView();
     };
 
     function submissionCanceled() {
-      // done TODO
       submitbutton.classList.remove('is-loading');
       messagebody.innerHTML = "L'envoi du formulaire a été annulé.";
       messagebox.classList.add('is-warning');
