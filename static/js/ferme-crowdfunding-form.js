@@ -1,3 +1,12 @@
+function escapeHtml(unsafe) {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 window.onload = function () {
   // countdown
   setInterval(function() {
@@ -70,10 +79,10 @@ window.onload = function () {
     function submissionComplete() {
       submitbutton.classList.remove('is-loading');
       if (this.readyState==4 && this.status==200) {
-        messagebody.innerHTML = "L'envoi du formulaire a réussi. " + this.responseText;
+        messagebody.innerHTML = "L'envoi du formulaire a réussi. " + escapeHtml(this.responseText);
         messagebox.classList.add('is-success');
       } else {
-        messagebody.innerHTML = "L'envoi du formulaire a échoué. Merci de me contacter directement à l'adresse <a href=\"mailto:contact@fermedegouet.fr?subject=Erreur dans le formulaire sur fermedegouet.fr&body=" + this.responseText + "\">contact@fermedegouet.fr</a> avec ce message d'erreur : " + this.responseText;
+        messagebody.innerHTML = "L'envoi du formulaire a échoué. Merci de me contacter directement à l'adresse <a href=\"mailto:contact@fermedegouet.fr?subject=Erreur dans le formulaire sur fermedegouet.fr&body=" + escapeHtml(this.responseText) + "\">contact@fermedegouet.fr</a> avec ce message d'erreur : " + escapeHtml(this.responseText);
         messagebox.classList.add('is-danger');
       }
       message.classList.remove('ferme-hidden');
@@ -82,7 +91,7 @@ window.onload = function () {
 
     function submissionFailed() {
       submitbutton.classList.remove('is-loading');
-      messagebody.innerHTML = "L'envoi du formulaire a échoué. Merci de me contacter directement à l'adresse <a href=\"mailto:contact@fermedegouet.fr\">contact@fermedegouet.fr</a>" + this.responseText;
+      messagebody.innerHTML = "L'envoi du formulaire a échoué. Merci de me contacter directement à l'adresse <a href=\"mailto:contact@fermedegouet.fr\">contact@fermedegouet.fr</a>" + escapeHtml(this.responseText);
       messagebox.classList.add('is-danger');
       message.classList.remove('ferme-hidden');
       message.scrollIntoView();
