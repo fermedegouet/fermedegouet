@@ -17,4 +17,4 @@ tauxMax = 1.5
 dateLimite = "2019-01-31"
 longitude = 45.311703
 latitude = 4.499096
-crowdfundingURL = "http://127.0.0.1:5432"
+crowdfundingURL = "https://api.fermedegouet.fr"
