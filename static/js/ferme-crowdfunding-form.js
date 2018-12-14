@@ -46,6 +46,8 @@ window.onload = function () {
         if (input.type) {
           if (input.type == "checkbox") {
             data[input.name] = input.checked;
+          } else if (input.type == "number") {
+            data[input.name] = input.valueAsNumber;
           } else {
             data[input.name] = input.value;
           }
