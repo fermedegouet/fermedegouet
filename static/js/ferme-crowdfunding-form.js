@@ -79,7 +79,7 @@ window.onload = function () {
     function submissionComplete() {
       submitbutton.classList.remove('is-loading');
       if (this.readyState==4 && this.status==200) {
-        messagebody.innerHTML = "L'envoi du formulaire a réussi. N°" + JSON.parse(this.responseText);
+        messagebody.innerHTML = "Le formulaire a bien été envoyé. Vous allez recevoir un email de confirmation. Merci beaucoup pour votre soutien ! N° de référence : " + JSON.parse(this.responseText);
         messagebox.classList.remove('is-danger');
         messagebox.classList.add('is-success');
       } else {
