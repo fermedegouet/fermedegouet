@@ -79,7 +79,7 @@ window.onload = function () {
     function submissionComplete() {
       submitbutton.classList.remove('is-loading');
       if (this.readyState==4 && this.status==200) {
-        messagebody.innerHTML = "L'envoi du formulaire a réussi. N°" + escapeHtml(this.responseText);
+        messagebody.innerHTML = "L'envoi du formulaire a réussi. N°" + this.responseText;
         messagebox.classList.remove('is-danger');
         messagebox.classList.add('is-success');
       } else {
