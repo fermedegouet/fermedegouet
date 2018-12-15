@@ -80,9 +80,11 @@ window.onload = function () {
       submitbutton.classList.remove('is-loading');
       if (this.readyState==4 && this.status==200) {
         messagebody.innerHTML = "L'envoi du formulaire a réussi. " + escapeHtml(this.responseText);
+        messagebox.classList.remove('is-danger');
         messagebox.classList.add('is-success');
       } else {
         messagebody.innerHTML = "L'envoi du formulaire a échoué. Merci de me contacter directement à l'adresse <a href=\"mailto:contact@fermedegouet.fr?subject=Erreur dans le formulaire sur fermedegouet.fr&body=" + escapeHtml(this.responseText) + "\">contact@fermedegouet.fr</a> avec ce message d'erreur : " + escapeHtml(this.responseText);
+        messagebox.classList.remove('is-success');
         messagebox.classList.add('is-danger');
       }
       message.classList.remove('ferme-hidden');
