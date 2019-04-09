@@ -4,7 +4,8 @@ title: "Et les banques, elles ne prêtent pas ?"
 
 Aussi étrange que cela puisse paraître, il s'agit d'un « petit » projet
 d'élevage en viande, avec de faibles investissements : le troupeau est
-relativement petit, il n'y a pas de bâtiment à construire… Les seules banques
+relativement petit (la moyenne en bovin allaitant se situe autour de 40 mères),
+il n'y a pas de bâtiment à construire ou à acheter… Les seules banques
 « classiques » qui financent des projets agricoles (Crédit Agricole, Crédit
 Mutuel) semblent plus intéressées pour prêter dans le cas d'installations avec
 des bâtiments à 400 000€ et des annuités sur 15 ans… C'est triste, mais c'est

@@ -8,7 +8,7 @@ d'argent :
 - Achat des animaux (17 vaches, un taureau, 4 génisses d'un an, et 7 veaux) :
   **33 000€**
 - Aménagement des bâtiments (qui étaient utilisés pour des brebis) :
-  **37 000€**
+  **42 000€**
 - Reprise du matériel (tracteur, télescopique, matériel de fenaison, petit
   matériel de clôture, parts de matériels en propriété avec d'autres
   agriculteurs) et achat de matériel nécessaire à l'activité de vente directe
@@ -16,7 +16,7 @@ d'argent :
   **69 000€**
 - Reprise des stocks (foin, céréales, paille, fioul) et achat de paille pour la
   première année : **10 000€**
-- Fonds de roulement : **50 000€**
+- Fonds de roulement : **45 000€**
 
 Ce qui nous fait un total de… **199 000€**. Une sacrée somme ! C'est une
 estimation qui pourra peut-être être revue légèrement à la baisse si je  fais
@@ -37,8 +37,10 @@ Soit un total de **69 000€** pour débuter l'activité. J'ai également un pe
 d'épargne (environ **35 000€**), mais je préfère la conserver en sécurité, pour
 faire face à des imprévus comme une très mauvaise récolte de foin, un gros
 problème mécanique sur le tracteur ou autre). Vous l'aurez compris, le compte
-n'y est pas : il manque **130 000€**. Je pourrais faire le choix de limiter (un
+n'y est pas : il manque **130 000€**. J'aurais pu faire le choix de limiter (un
 peu) les frais en démarrant avec un troupeau un peu plus petit et le faire
-grandir progressivement. Cela voudrait dire que les premières années seraient
-très difficiles : j'aurais du mal à payer les frais de fonctionnement de la
-ferme, et encore plus à me rémunérer.
+grandir progressivement. Cela aurait impliqué des premières années très
+difficiles : j'aurais eu du mal à payer les frais de fonctionnement de la
+ferme, et encore plus à me rémunérer. De la même manière réduire les coûts de
+matériel et d'aménagement signifierait un confort de travail moindre, une
+perte de temps et des conditions de vie plus difficiles pour les vaches.
