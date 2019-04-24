@@ -302,6 +302,12 @@ h1 {
   @extend .is-uppercase;
 }
 
+.ferme-subtitle {
+  @extend .subtitle;
+  @extend .has-text-centered;
+  @extend .has-text-grey;
+}
+
 .ferme-media {
   @extend .media;
   padding-top: 1rem;
