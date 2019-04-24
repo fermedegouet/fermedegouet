@@ -15,7 +15,7 @@
   <div class="ferme-section">
     <div class="ferme-box">
       <h1 class="ferme-title pb-2">{{ .Title }}</h1>
-      <h2 class="ferme-subtitle pb-2">{{ .Site.Params.pretTotal }}€ avec le remboursement étalé sur 8 ans pour soutenir la création d'une ferme.</h2>
+      <h2 class="ferme-subtitle pb-2">{{ .Site.Params.pretTotal }}€ avec un remboursement étalé sur 8 ans pour soutenir la création d'une ferme.</h2>
       {{- $percent := lang.NumFmt 0 (div (mul .Site.Params.pretActuel 100) .Site.Params.pretTotal) -}}
       <progress class="progress is-large is-primary" value="{{ .Site.Params.pretActuel }}" max="{{ .Site.Params.pretTotal }}">{{ $percent }}%</progress>
       <p>Montant total réuni : {{ .Site.Params.pretActuel }}€ sur {{ .Site.Params.pretTotal }}€, soit <strong>{{ $percent }}%</strong>.</p>
