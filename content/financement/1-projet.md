@@ -14,8 +14,8 @@ d'orienter mon élevage vers la production de viande, pour pouvoir assurer le
 travail nécessaire seul, tout en conservant du temps pour d'autres activités.
 
 Mon projet repose sur la vente directe en colis, pour pouvoir me dégager un
-revenu correct, m'éloigner au temps que possible de l'industrie
-agroalimentaire, et développer des liens avec les consommateurs basés sur une
+revenu correct, limiter ma dépendance face à l'industrie agroalimentaire, et
+développer une relation de confiance avec les consommateurs, basée sur une
 alimentation de qualité.
 
 [en savoir plus](/#le-projet-en-deux-mots)
