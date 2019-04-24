@@ -10,7 +10,7 @@
     "leaflet": "^1.4.0",
     "node-sass": "^4.11.0",
     "npm": "^6.9.0",
-    "uglify-js": "^3.5.3"
+    "uglify-js": "^3.5.7"
   },
   "devDependencies": {},
   "scripts": {
