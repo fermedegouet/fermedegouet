@@ -20,7 +20,7 @@ avance les 6 prochains mois de panier de légumes de votre maraîcher préféré
 avec de la viande à la place des légumes (il faut des deux pour faire un
 pot-au-feu !) et un remboursement un peu plus long.
 
-Il n'y a pas de petite somme, mais préparer les contrats de prêts, les signer,
-faire des virements annuels va quand même me prendre un peu de temps. Je vous
-propose un montant minimum de prêt de 100€ (environ le prix d'un colis) et
-sinon d'essayer de vous regrouper avec des amis pour pré-commander un colis.
+Il n'y a pas de petite contribution, mais préparer les contrats de prêts, les
+signer, faire des virements annuels va quand même me prendre un peu de temps.
+Je vous propose un montant minimum de prêt de 100€ (environ le prix d'un colis)
+et sinon d'essayer de vous regrouper avec des amis pour pré-commander un colis.
