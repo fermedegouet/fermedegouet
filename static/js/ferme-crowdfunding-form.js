@@ -47,6 +47,9 @@ window.onload = function () {
     // stop the regular form submission
     e.preventDefault();
 
+    // add class is-loading to button
+    submitbutton.classList.add('is-loading');
+
     // collect the form data while iterating over the inputs
     var data = {};
     for (var i = 0, ii = form.length; i < ii; ++i) {
