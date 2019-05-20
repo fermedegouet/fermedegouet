@@ -1,21 +1,6 @@
 $fa-font-path: "../fonts";
 @import "../../node_modules/fork-awesome/scss/fork-awesome.scss";
 
-// logo font
-/* eb-garamond-regular - latin */
-@font-face {
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/eb-garamond-v10-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('EB Garamond Regular'), local('EBGaramond-Regular'),
-       url('../fonts/eb-garamond-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/eb-garamond-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/eb-garamond-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/eb-garamond-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/eb-garamond-v10-latin-regular.svg#EBGaramond') format('svg'); /* Legacy iOS */
-}
-
 // local variables
 $ferme-logo-height-mobile: 150px;
 $ferme-logo-container-height-mobile: $ferme-logo-height-mobile + 20px;

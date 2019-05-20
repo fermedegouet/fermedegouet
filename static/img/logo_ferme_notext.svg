@@ -13,7 +13,10 @@
    version="1.1"
    id="svg4"
    sodipodi:docname="logo_ferme_notext.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:export-filename="/home/gueux/src/fermedegouet/static/img/logo_ferme_notext.svg.png"
+   inkscape:export-xdpi="150"
+   inkscape:export-ydpi="150">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -22,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,8 +40,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1247"
-     inkscape:window-height="753"
+     inkscape:window-width="1088"
+     inkscape:window-height="751"
      id="namedview6"
      showgrid="false"
      fit-margin-top="0"
@@ -46,7 +49,7 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="1.1639359"
-     inkscape:cx="12.742658"
+     inkscape:cx="143.10149"
      inkscape:cy="143.43144"
      inkscape:window-x="0"
      inkscape:window-y="13"

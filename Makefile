@@ -38,7 +38,6 @@ js: npm
 
 fonts:
 	mkdir -p $(DIST_STATIC)/fonts
-	cp -R $(STATIC)/fonts/* $(DIST_STATIC)/fonts/
 	cp -R node_modules/fork-awesome/fonts/* $(DIST_STATIC)/fonts/
 
 img:

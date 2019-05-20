@@ -1,12 +1,13 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 
 Files: *
-Copyright: © 2018 Félix Sipma <felix.sipma@no-log.org>
+Copyright: © 2018-2019 Félix Sipma <felix.sipma@no-log.org>
 License: AGPL-3+
 
-Files: static/fonts/eb-garamond-v10-latin-regular.*
-Copyright: © 2017 The EB Garamond Project Authors (https://github.com/octaviopardo/EBGaramond12)
-License: OFL-1.1
+Files: static/img/logo_ferme.svg
+Copyright: © 2018-2019 Félix Sipma <felix.sipma@no-log.org>
+License: AGPL-3+ and OFL-1.1
+Comment: Mostly AGPL-3+, but font (EB Garamond) is OFL-1.1 Copyright (c) 2010-2013 Georg Duffner (http://www.georgduffner.at)
 
 License: OFL-1.1
     -----------------------------------------------------------
