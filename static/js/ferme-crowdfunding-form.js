@@ -20,9 +20,9 @@ window.onload = function () {
     var seconds = Math.floor((range % (1000 * 60)) / 1000);
 
     if (countdownDate < nowDate) {
-      document.getElementById("ferme-countdown").innerHTML = "Terminé !";
+      document.getElementById("ferme-countdown").innerHTML = "Terminé <a href=\"#ferme-formulaire-pret\">(mais vous pouvez toujours participer)</a> !";
     } else {
-      document.getElementById("ferme-countdown").innerHTML = "Plus que : " + days + " jours, " + hours + " heures, " + minutes + " minutes et " + seconds + " secondes.";
+      document.getElementById("ferme-countdown").innerHTML = "Plus que : " + days + " jours, " + hours + " heures, " + minutes + " minutes et " + seconds + " secondes. <a href=\"#ferme-formulaire-pret\">N'hésitez pas à participer !</a>";
     }
   }, 1000);
 
