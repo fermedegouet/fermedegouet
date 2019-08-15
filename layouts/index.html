@@ -57,7 +57,7 @@
 
 {{ define "main" }}
 <div class="ferme-content">
-  {{ range sort (where .Data.Pages "Type" "homepage") "Path" }}
+  {{ range sort (where .Site.RegularPages "Type" "homepage") "Path" }}
   <div class="ferme-section">
     <h1 class="ferme-title" id="{{ .Title | urlize }}">{{ .Title }}</h1>
     {{ .Content }}
