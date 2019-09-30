@@ -3,17 +3,20 @@ title: "Accueil"
 menu: "main"
 weight: 1
 keywords:
-- viande de bœuf
+- viande
+- aubrac
 - vache
 - veau
-- aubrac
-- ferme
 - bio
 - biologique
+- pilat
+- félix sipma
+- bœuf
+- ferme
+- colis
 - caissette
 - la versanne
 - loire
-- sipma
 - fermedegouet
 - fermedegouet.fr
 ---
