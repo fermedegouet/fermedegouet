@@ -2,7 +2,7 @@
 title: L'herbe
 ---
 
-{{% columns %}}
+{{< columns >}}
 {{% column-one-third %}}
 Les vaches sont des ruminants, leur alimentation repose sur l'herbe. L'herbe et
 les ressources ligneuses (ronces, genêts, joncs, bruyères, feuilles d'arbres,
@@ -16,7 +16,7 @@ d'autres éleveurs du Pilat sur ces questions au sein du groupe **Pâtur'en
 Pilat**, qui fait lui-même partie du réseau
 **[Pâtur'Ajuste](http://www.paturajuste.fr/)**.
 {{% /column-one-third %}}
-{{% column-two-thirds %}}
+{{< column-two-thirds >}}
 {{< img src="img/chaussitre2.jpg" >}}
-{{% /column-two-thirds %}}
-{{% /columns %}}
+{{< /column-two-thirds >}}
+{{< /columns >}}
