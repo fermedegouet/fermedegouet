@@ -17,4 +17,6 @@ tauxMax = 1.5
 dateLimite = "2019-06-15"
 longitude = 45.311703
 latitude = 4.499096
+countryCode = "FR"
+city = "La Versanne"
 crowdfundingURL = "https://api.fermedegouet.fr"

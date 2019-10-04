@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr-fr">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
-    <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" property="og:title">
-    <meta content="{{ delimit .Keywords ", " }}" name="keywords">
-    <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Title }}{{ end }}" property="og:description">
+    <meta property="og:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}">
+    <meta name="keywords" content="{{ delimit .Keywords ", " }}">
+    <meta property="og:description" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Title }}{{ end }}">
+    <meta name="description" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Title }}{{ end }}">
+    <meta name="ICBM" content="{{ .Site.Params.latitude }}, {{ .Site.Params.longitude }}">
+    <meta name="geo.position" content="{{ .Site.Params.latitude }};{{ .Site.Params.longitude }}">
+    <meta name="geo.region" content="{{ .Site.Params.countryCode }}">
+    <meta name="geo.placename" content="{{ .Site.Params.city }}">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="google" content="notranslate">
     {{ block "head" . }}{{ end }}
-    <link href="{{ "css/ferme.min.css" | relURL }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{ "css/ferme.min.css" | relURL }}">
     <link rel="shortcut icon" href="{{ .Site.BaseURL | relURL }}favicon.ico">
   </head>
   <body class="ferme-body">
@@ -17,7 +24,7 @@
       {{ block "header-logo" . }}
       {{ end }}
       {{ block "menu" .}}
-      <nav id="ferme-nav" class="ferme-navbar{{ block "ferme-nav-classes" . }}{{ end }}" role="navigation" aria-label="main navigation">
+      <nav id="ferme-nav" class="ferme-navbar{{ block "ferme-nav-classes" . }}{{ end }}" aria-label="main navigation">
         <div class="ferme-navbar-container">
           <div class="ferme-navbar-brand">
             <a role="button" class="ferme-navbar-burger" aria-label="menu" aria-expanded="false" data-target="ferme-nav-menu">
