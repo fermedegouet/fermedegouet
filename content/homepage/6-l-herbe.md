@@ -17,6 +17,6 @@ Pilat**, qui fait lui-même partie du réseau
 **[Pâtur'Ajuste](http://www.paturajuste.fr/)**.
 {{% /column-one-third %}}
 {{< column-two-thirds >}}
-{{< img src="img/chaussitre2.jpg" >}}
+{{< img src="img/chaussitre2.jpg" alt="L'estive, dominée par les ligneux" >}}
 {{< /column-two-thirds >}}
 {{< /columns >}}

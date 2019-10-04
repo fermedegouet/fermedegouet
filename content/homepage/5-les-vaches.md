@@ -5,7 +5,7 @@ title: "Les vaches"
 {{< columns >}}
 {{< column-two-thirds >}}
 <figure class="ferme-figure">
-  {{< img src="img/vaches.jpg" alt="Les vaches">}}
+  {{< img src="img/vaches.jpg" alt="Insitu, une jolie vache dans la neige">}}
 </figure>
 {{< /column-two-thirds >}}
 {{% column-one-third %}}
