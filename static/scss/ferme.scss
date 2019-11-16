@@ -377,3 +377,9 @@ h1 {
 .ferme-top-arrow {
   color: white;
 }
+
+.ferme-hidden-on-mobile {
+  @include until($tablet) {
+    display: none;
+  }
+}
