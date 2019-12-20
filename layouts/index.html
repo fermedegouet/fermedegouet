@@ -25,6 +25,11 @@
 
 {{ define "header-logo" }}
 <div id="ferme-header-logo" class="header">
+  <div class="ferme-logo-bio">
+    <span>
+      <img src="{{ "img/logo_np.svg" | relURL }}" alt="logo Nature & Progrès" onerror="this.src='{{ "img/logo_np.png" | relURL }}'">
+    </span>
+  </div>
   {{/* TODO: uncomment when AB agreement is given
   <div class="ferme-logo-bio">
     <span>
