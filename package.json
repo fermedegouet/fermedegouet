@@ -4,6 +4,7 @@
   "description": "fermedegouet.fr website",
   "main": "index.js",
   "dependencies": {
+    "aos": "^2.3.4",
     "bulma": "^0.8.0",
     "csso-cli": "^3.0.0",
     "fork-awesome": "^1.1.7",

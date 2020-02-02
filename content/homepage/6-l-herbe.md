@@ -3,7 +3,7 @@ title: L'herbe
 ---
 
 {{< columns >}}
-{{% column-one-third %}}
+{{% column class="one-half" %}}
 Les vaches sont des ruminants, leur alimentation repose sur l'herbe. L'herbe et
 les ressources ligneuses (ronces, genêts, joncs, bruyères, feuilles d'arbres,
 …), consommées sur pied, sont bien moins coûteuses que le foin récolté, et bien
@@ -15,8 +15,10 @@ ligneuses, habituellement pensées comme des obstacles ? Je réfléchis avec
 d'autres éleveurs du Pilat sur ces questions au sein du groupe **Pâtur'en
 Pilat**, qui fait lui-même partie du réseau
 **[Pâtur'Ajuste](http://www.paturajuste.fr/)**.
-{{% /column-one-third %}}
-{{< column-two-thirds >}}
-{{< img src="img/chaussitre2.jpg" alt="L'estive, dominée par les ligneux" >}}
-{{< /column-two-thirds >}}
+{{% /column %}}
+{{% column class="one-half" data-aos="fade-left" %}}
+<figure class="ferme-figure">
+  {{< img src="img/chaussitre2.jpg" alt="L'estive, dominée par les ligneux" >}}
+</figure>
+{{% /column %}}
 {{< /columns >}}

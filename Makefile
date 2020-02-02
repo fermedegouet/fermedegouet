@@ -20,6 +20,8 @@ css: npm
 		> $(TMP)/css/ferme-map.css
 	csso $(TMP)/css/ferme-map.css --output $(TMP)/css/ferme-map.min.css
 	cp $(TMP)/css/ferme-map.min.css $(DIST_STATIC)/css/
+	cp node_modules/aos/dist/aos.css $(TMP)/css/aos.css
+	csso $(TMP)/css/aos.css --output $(DIST_STATIC)/css/aos.min.css
 
 sass-watch:
 	node-sass --watch $(STATIC)/scss/ferme.scss $(DIST_STATIC)/css/ferme.min.css
@@ -35,6 +37,8 @@ js: npm
 	cp $(TMP)/js/ferme-map.min.js $(DIST_STATIC)/js
 	uglifyjs --compress --mangle -o $(TMP)/js/ferme-crowdfunding-form.min.js $(STATIC)/js/ferme-crowdfunding-form.js
 	cp $(TMP)/js/ferme-crowdfunding-form.min.js $(DIST_STATIC)/js
+	cp node_modules/aos/dist/aos.js $(TMP)/js/aos.js
+	uglifyjs --compress --mangle -o $(DIST_STATIC)/js/aos.min.js $(TMP)/js/aos.js
 
 fonts:
 	mkdir -p $(DIST_STATIC)/fonts

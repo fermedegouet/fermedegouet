@@ -1,5 +1,6 @@
 {{ define "head" }}
 <link rel="stylesheet" type="text/css" href="{{ "css/ferme-map.min.css" | relURL }}">
+<link rel="stylesheet" type="text/css" href="{{ "css/aos.min.css" | relURL }}">
 {{ end }}
 
 {{ define "footer" }}
@@ -17,6 +18,13 @@
   var latitude = {{ .Site.Params.latitude }}
 </script>
 <script src="{{ "js/ferme-map.min.js" | relURL }}"></script>
+<script src="{{ "js/aos.min.js" | relURL }}"></script>
+<script>
+  AOS.init({
+    easing: "ease-out",
+    duration: 800,
+  });
+</script>
 {{ end }}
 
 {{ define "ferme-nav-classes" }}{{ end }}
