@@ -1,4 +1,5 @@
-var map = L.map('fermemap').setView([longitude, latitude], 12);
+var marker = L.latLng(latitude, longitude);
+var map = L.map('fermemap').setView(marker, 12);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
@@ -15,4 +16,4 @@ var breadIcon = L.icon ({
   shadowSize:  [41, 41]
 });
 
-L.marker([longitude, latitude], {icon: breadIcon}).addTo(map);
+L.marker(marker, {icon: breadIcon}).addTo(map);

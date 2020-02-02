@@ -9,6 +9,9 @@
         {{ $address }}
       </span>
       {{ end }}
+      <span class="address is-size-7">
+        <a href="geo:{{ .Site.Params.Latitude }},{{ .Site.Params.Longitude }};">{{ .Site.Params.Latitude }},{{ .Site.Params.Longitude }}</a>
+      </span>
     </div>
   </div>
   <div class="ferme-columns phone">
