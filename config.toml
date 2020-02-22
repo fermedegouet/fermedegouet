@@ -6,20 +6,20 @@ publishDir = "dist/public"
 DefaultContentLanguage = "fr"
 
 [params]
-email = "contact@fermedegouet.fr"
-phone = "+33 6 46 43 72 89"
-address = [ "Ferme de Gouet", "42220 La Versanne" ]
-description = "Site de la Ferme de Gouet"
-pretTotal = 130000
-pretActuel = 59000
-tauxMin = 0
-tauxMax = 1.5
-dateLimite = "2019-06-15"
-latitude = 45.311703
-longitude = 4.499096
-countryCode = "FR"
-city = "La Versanne"
-crowdfundingURL = "https://api.fermedegouet.fr"
+  email = "contact@fermedegouet.fr"
+  phone = "+33 6 46 43 72 89"
+  address = [ "Ferme de Gouet", "42220 La Versanne" ]
+  description = "Site de la Ferme de Gouet"
+  pretTotal = 130000
+  pretActuel = 59000
+  tauxMin = 0
+  tauxMax = 1.5
+  dateLimite = "2019-06-15"
+  latitude = 45.311703
+  longitude = 4.499096
+  countryCode = "FR"
+  city = "La Versanne"
+  crowdfundingURL = "https://api.fermedegouet.fr"
 
 [markup.goldmark.renderer]
-unsafe = true
+  unsafe = true
