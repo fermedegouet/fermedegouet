@@ -20,3 +20,6 @@ longitude = 4.499096
 countryCode = "FR"
 city = "La Versanne"
 crowdfundingURL = "https://api.fermedegouet.fr"
+
+[markup.goldmark.renderer]
+unsafe = true
