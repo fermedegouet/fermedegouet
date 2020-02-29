@@ -12,7 +12,7 @@ npm:
 css: npm
 	mkdir -p $(TMP)/css/
 	mkdir -p $(DIST_STATIC)/css
-	node-sass $(STATIC)/scss/ferme.scss $(TMP)/css/ferme.css
+	sass $(STATIC)/scss/ferme.scss $(TMP)/css/ferme.css
 	csso $(TMP)/css/ferme.css --output $(TMP)/css/ferme.min.css
 	cp $(TMP)/css/ferme.min.css $(DIST_STATIC)/css/
 	cat \
@@ -24,7 +24,7 @@ css: npm
 	csso $(TMP)/css/aos.css --output $(DIST_STATIC)/css/aos.min.css
 
 sass-watch:
-	node-sass --watch $(STATIC)/scss/ferme.scss $(DIST_STATIC)/css/ferme.min.css
+	sass --watch $(STATIC)/scss/ferme.scss $(DIST_STATIC)/css/ferme.min.css
 
 js: npm
 	mkdir -p $(TMP)/js/
