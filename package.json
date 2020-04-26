@@ -5,12 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "aos": "^2.3.4",
-    "bulma": "^0.8.0",
+    "bulma": "^0.8.2",
     "csso-cli": "^3.0.0",
     "fork-awesome": "^1.1.7",
     "leaflet": "^1.6.0",
-    "sass": "^1.26.2",
-    "uglify-js": "^3.8.0"
+    "sass": "^1.26.5",
+    "uglify-js": "^3.9.1"
   },
   "devDependencies": {},
   "scripts": {
