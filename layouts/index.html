@@ -34,20 +34,13 @@
 {{ define "header-logo" }}
 <div id="ferme-header-logo" class="header">
   <div class="ferme-logo-bio">
-    <span>
+    <div class="ferme-logo-bio-np">
       <img src="{{ "img/logo_np.svg" | relURL }}" alt="logo Nature & Progrès" onerror="this.src='{{ "img/logo_np.png" | relURL }}'">
-    </span>
-  </div>
-  {{/* TODO: uncomment when AB agreement is given
-  <div class="ferme-logo-bio">
-    <span>
-      <img src="{{ "img/AB.svg" | relURL }}" alt="logo AB" onerror="this.src='{{ "img/AB.png" | relURL }}'">
-    </span>
-    <span>
+    </div>
+    <div class="ferme-logo-bio-eu">
       <img src="{{ "img/EU_Organic.svg" | relURL }}" alt="logo bio EU" onerror="this.src='{{ "img/EU_Organic.png" | relURL }}'">
-    </span>
+    </div>
   </div>
-  */}}
   <div class="ferme-logo">
     <a href="{{ .Site.BaseURL | relURL }}">
       <img class="ferme-logo-img" src="{{ "img/logo_ferme.svg" | relURL }}" alt="logo ferme" onerror="this.src='{{ "img/logo_ferme.png" | relURL }}'">
