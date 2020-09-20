@@ -1,3 +1,4 @@
+// ferme-map.js
 var marker = L.latLng(latitude, longitude);
 var map = L.map('fermemap').setView(marker, 12);
 
