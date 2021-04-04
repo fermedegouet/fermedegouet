@@ -20,7 +20,7 @@ DefaultContentLanguage = "fr"
   countryCode = "FR"
   city = "La Versanne"
   crowdfundingURL = "https://api.fermedegouet.fr"
-  copyrightYears = "2018-2020"
+  copyrightYears = "2018-2021"
 
 [markup.goldmark.renderer]
   unsafe = true
