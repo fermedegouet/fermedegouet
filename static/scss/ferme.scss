@@ -264,8 +264,6 @@ h1 {
   overflow: hidden;
   @include until($tablet) {
     background-image: str-replace($ferme-banner-img-src, '.jpg', '_768.jpg');
-    background-position: center 0%;
-    background-size: unset;
   }
   @include tablet-only {
     background-image: str-replace($ferme-banner-img-src, '.jpg', '_1024.jpg');
@@ -279,8 +277,10 @@ h1 {
   @include from($fullhd) {
     background-image: $ferme-banner-img-src;
   }
-  background-attachment: fixed;
-  background-position: bottom;
+  @include from($tablet) {
+    background-attachment: fixed;
+    background-position: bottom;
+  }
   background-repeat: no-repeat;
   background-size: cover;
 }
