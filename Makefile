@@ -42,7 +42,7 @@ js: npm
 
 fonts:
 	mkdir -p $(DIST_STATIC)/fonts
-	cp -R node_modules/fork-awesome/fonts/* $(DIST_STATIC)/fonts/
+	cp -R node_modules/bootstrap-icons/font/fonts/* $(DIST_STATIC)/fonts/
 
 img:
 	mkdir -p $(DIST_STATIC)/img

@@ -1,7 +1,7 @@
 <address>
   <div class="ferme-columns address">
     <div class="column is-one-fifth">
-      <i class="fa fa-map-marker" aria-hidden="true"></i>
+      <i class="bi-geo-alt" aria-hidden="true"></i>
     </div>
     <div class="column is-four-fifths">
       {{ range $address := .Site.Params.Address }}
@@ -16,7 +16,7 @@
   </div>
   <div class="ferme-columns phone">
     <div class="column is-one-fifth">
-      <i class="fa fa-phone" aria-hidden="true"></i>
+      <i class="bi-telephone" aria-hidden="true"></i>
     </div>
     <div class="column is-four-fifths">
       <a href="tel:{{ .Site.Params.Phone }}">{{ .Site.Params.Phone }}</a>
@@ -24,7 +24,7 @@
   </div>
   <div class="ferme-columns email">
     <div class="column is-one-fifth">
-      <i class="fa fa-envelope" aria-hidden="true"></i>
+      <i class="bi-envelope" aria-hidden="true"></i>
     </div>
     <div class="column is-four-fifths">
       <a href="mailto:{{ .Site.Params.Email }}">{{ .Site.Params.Email }}</a>

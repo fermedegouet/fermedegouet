@@ -1,5 +1,15 @@
-$fa-font-path: "../fonts";
-@import "../../node_modules/fork-awesome/scss/fork-awesome.scss";
+// sass syntax: import 'file' (without extension for .css)
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons';
+
+// override fonts location https://github.com/twbs/icons/issues/563
+$twbs-font-path: "../fonts" !default;
+
+@font-face {
+  font-family: "bootstrap-icons";
+  src:
+  url("#{$twbs-font-path}/bootstrap-icons.woff2?856008caa5eb66df68595e734e59580d") format("woff2"),
+  url("#{$twbs-font-path}/bootstrap-icons.woff?856008caa5eb66df68595e734e59580d") format("woff");
+}
 
 // local variables
 $ferme-logo-height-mobile: 150px;
@@ -379,6 +389,7 @@ h1 {
 
 .ferme-top-arrow {
   color: white;
+  font-size: 2rem;
 }
 
 .ferme-hidden-on-mobile {

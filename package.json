@@ -5,14 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "aos": "^2.3.4",
+    "bootstrap-icons": "^1.5.0",
     "bulma": "^0.9.0",
     "csso-cli": "^3.0.0",
-    "fork-awesome": "^1.1.7",
     "leaflet": "^1.7.1",
     "sass": "^1.26.11",
     "uglify-js": "^3.10.4"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
