@@ -6,9 +6,7 @@ $twbs-font-path: "../fonts" !default;
 
 @font-face {
   font-family: "bootstrap-icons";
-  src:
-  url("#{$twbs-font-path}/bootstrap-icons.woff2?856008caa5eb66df68595e734e59580d") format("woff2"),
-  url("#{$twbs-font-path}/bootstrap-icons.woff?856008caa5eb66df68595e734e59580d") format("woff");
+  src: url("#{$twbs-font-path}/bootstrap-icons.woff2?856008caa5eb66df68595e734e59580d") format("woff2"), url("#{$twbs-font-path}/bootstrap-icons.woff?856008caa5eb66df68595e734e59580d") format("woff");
 }
 
 // local variables
@@ -396,4 +394,9 @@ h1 {
   @include until($tablet) {
     display: none;
   }
+}
+
+.ferme-logo-financeur {
+  max-width: 200px;
+  max-height: 130px;
 }
