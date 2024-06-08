@@ -1,8 +1,3 @@
-// overwrite bootstrap-icons font dir path
-$bootstrap-icons-font-dir: "../fonts";
-
-@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
-
 // local variables
 $ferme-logo-height-mobile: 150px;
 $ferme-logo-container-height-mobile: $ferme-logo-height-mobile + 20px;
@@ -30,6 +25,17 @@ $section-padding: 3rem 1.5rem;
 //$navbar-item-hover-background-color: $tea-green;
 $navbar-item-active-background-color: hsl(0, 0%, 95%);
 
+@use "../../node_modules/bulma/sass";
+@use "../../node_modules/bulma/sass/utilities/mixins";
+@use "../../node_modules/bulma/sass/utilities/initial-variables";
+
+$tablet: initial-variables.$tablet;
+$fullhd: initial-variables.$fullhd;
+
+// overwrite bootstrap-icons font dir path
+$bootstrap-icons-font-dir: "../fonts";
+
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
 
 @function str-replace($string, $search, $replace: '') {
   $index: str-index($string, $search);
@@ -38,8 +44,6 @@ $navbar-item-active-background-color: hsl(0, 0%, 95%);
   }
   @return $string;
 }
-
-@import "../../node_modules/bulma/bulma.sass";
 
 html, body {
   height: 100%;
@@ -52,7 +56,7 @@ html, body {
 .ferme-header {
   &.ferme-header-with-logo {
     height: 100%;
-    @include until($tablet) {
+    @include mixins.touch {
       max-height: $ferme-logo-container-height-mobile + $ferme-navbar-height + $ferme-banner-height-mobile;
     }
     width: 100%;
@@ -64,10 +68,10 @@ html, body {
   position: relative;
   text-align: center;
   display: table-row;
-  @include until($tablet) {
+  @include mixins.until($tablet) {
     height: $ferme-logo-container-height-mobile;
   }
-  @include from($tablet) {
+  @include mixins.from($tablet) {
     height: $ferme-logo-container-height;
   }
   vertical-align: middle;
@@ -109,18 +113,18 @@ html, body {
 .ferme-logo {
   a {
     width: 100%;
-    @include until($tablet) {
+    @include mixins.until($tablet) {
       height: $ferme-logo-height-mobile;
     }
-    @include from($tablet) {
+    @include mixins.from($tablet) {
       height: $ferme-logo-height;
     }
   }
   @extend .has-text-centered;
-  @include until($tablet) {
+  @include mixins.until($tablet) {
     height: $ferme-logo-container-height-mobile;
   }
-  @include from($tablet) {
+  @include mixins.from($tablet) {
     height: $ferme-logo-container-height;
   }
   display: flex;
@@ -245,10 +249,10 @@ h1 {
 
 .ferme-banner {
   display: table-row;
-  @include until($tablet) {
+  @include mixins.until($tablet) {
     height: $ferme-banner-height-mobile;
   }
-  @include from($tablet) {
+  @include mixins.from($tablet) {
     height: $ferme-banner-height;
   }
 }
@@ -257,29 +261,29 @@ h1 {
   position: relative;
   align-items: center;
   min-height: $ferme-banner-min-height;
-  @include until($tablet) {
+  @include mixins.until($tablet) {
     height: $ferme-banner-height-mobile;
   }
-  @include from($tablet) {
+  @include mixins.from($tablet) {
     height: $ferme-banner-height;
   }
   overflow: hidden;
-  @include until($tablet) {
+  @include mixins.until($tablet) {
     background-image: str-replace($ferme-banner-img-src, '.jpg', '_768.jpg');
   }
-  @include tablet-only {
+  @include mixins.tablet-only {
     background-image: str-replace($ferme-banner-img-src, '.jpg', '_1024.jpg');
   }
-  @include desktop-only {
+  @include mixins.desktop-only {
     background-image: str-replace($ferme-banner-img-src, '.jpg', '_1216.jpg');
   }
-  @include widescreen-only {
+  @include mixins.widescreen-only {
     background-image: str-replace($ferme-banner-img-src, '.jpg', '_1408.jpg');
   }
-  @include from($fullhd) {
+  @include mixins.from($fullhd) {
     background-image: $ferme-banner-img-src;
   }
-  @include from($tablet) {
+  @include mixins.from($tablet) {
     background-attachment: fixed;
     background-position: bottom;
   }
@@ -323,11 +327,11 @@ h1 {
 
 .ferme-people-img {
   border-radius: 50%;
-  @include until($tablet) {
+  @include mixins.until($tablet) {
     height: $ferme-people-img-size-mobile;
     width: $ferme-people-img-size-mobile;
   }
-  @include from($tablet) {
+  @include mixins.from($tablet) {
     height: $ferme-people-img-size;
     width: $ferme-people-img-size;
   }
@@ -344,11 +348,11 @@ h1 {
 }
 
 .ferme-no-right-padding-on-desktop {
-  @include from($tablet) {
+  @include mixins.from($tablet) {
     padding-right: 0;
   }
   .ferme-columns {
-    @include from($tablet) {
+    @include mixins.from($tablet) {
       margin-right: 0;
     }
   }
@@ -364,7 +368,7 @@ h1 {
 
 .ferme-map-column {
   display: block;
-  @include from($tablet) {
+  @include mixins.from($tablet) {
     padding-right: 0;
   }
 }
@@ -385,7 +389,7 @@ h1 {
 }
 
 .ferme-hidden-on-mobile {
-  @include until($tablet) {
+  @include mixins.until($tablet) {
     display: none;
   }
 }
