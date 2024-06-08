@@ -5,12 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "aos": "^2.3.4",
-    "bootstrap-icons": "^1.5.0",
-    "bulma": "^0.9.0",
-    "csso-cli": "^3.0.0",
-    "leaflet": "^1.7.1",
-    "sass": "^1.26.11",
-    "uglify-js": "^3.10.4"
+    "bootstrap-icons": "^1.11.3",
+    "bulma": "^0.9.4",
+    "csso-cli": "^4.0.0",
+    "leaflet": "^1.9.4",
+    "sass": "^1.77.4",
+    "uglify-js": "^3.17.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
