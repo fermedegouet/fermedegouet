@@ -1,13 +1,7 @@
-// sass syntax: import 'file' (without extension for .css)
-@import '../../node_modules/bootstrap-icons/font/bootstrap-icons';
+// overwrite bootstrap-icons font dir path
+$bootstrap-icons-font-dir: "../fonts";
 
-// override fonts location https://github.com/twbs/icons/issues/563
-$twbs-font-path: "../fonts" !default;
-
-@font-face {
-  font-family: "bootstrap-icons";
-  src: url("#{$twbs-font-path}/bootstrap-icons.woff2?856008caa5eb66df68595e734e59580d") format("woff2"), url("#{$twbs-font-path}/bootstrap-icons.woff?856008caa5eb66df68595e734e59580d") format("woff");
-}
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
 
 // local variables
 $ferme-logo-height-mobile: 150px;
