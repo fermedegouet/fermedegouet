@@ -10,19 +10,19 @@ npm:
 css: npm
 	mkdir -p $(TMP)/css/
 	mkdir -p $(DIST_STATIC)/css
-	npm exec -- sass $(STATIC)/scss/ferme.scss $(TMP)/css/ferme.css
-	npm exec -- csso $(TMP)/css/ferme.css --output $(TMP)/css/ferme.min.css
+	npx -- sass $(STATIC)/scss/ferme.scss $(TMP)/css/ferme.css
+	npx -- csso $(TMP)/css/ferme.css --output $(TMP)/css/ferme.min.css
 	cp $(TMP)/css/ferme.min.css $(DIST_STATIC)/css/
 	cat \
 		node_modules/leaflet/dist/leaflet.css \
 		> $(TMP)/css/ferme-map.css
-	npm exec -- csso $(TMP)/css/ferme-map.css --output $(TMP)/css/ferme-map.min.css
+	npx -- csso $(TMP)/css/ferme-map.css --output $(TMP)/css/ferme-map.min.css
 	cp $(TMP)/css/ferme-map.min.css $(DIST_STATIC)/css/
 	cp node_modules/aos/dist/aos.css $(TMP)/css/aos.css
-	npm exec -- csso $(TMP)/css/aos.css --output $(DIST_STATIC)/css/aos.min.css
+	npx -- csso $(TMP)/css/aos.css --output $(DIST_STATIC)/css/aos.min.css
 
 sass-watch:
-	npm exec -- sass --watch $(STATIC)/scss/ferme.scss $(DIST_STATIC)/css/ferme.min.css
+	npx -- sass --watch $(STATIC)/scss/ferme.scss $(DIST_STATIC)/css/ferme.min.css
 
 js: npm
 	mkdir -p $(TMP)/js/
@@ -31,12 +31,12 @@ js: npm
 		node_modules/leaflet/dist/leaflet.js \
 		$(STATIC)/js/ferme-map.js \
 		> $(TMP)/js/ferme-map.js
-	npm exec -- uglifyjs --compress --mangle -o $(TMP)/js/ferme-map.min.js $(TMP)/js/ferme-map.js
+	npx -- uglifyjs --compress --mangle -o $(TMP)/js/ferme-map.min.js $(TMP)/js/ferme-map.js
 	cp $(TMP)/js/ferme-map.min.js $(DIST_STATIC)/js
-	npm exec -- uglifyjs --compress --mangle -o $(TMP)/js/ferme-crowdfunding-form.min.js $(STATIC)/js/ferme-crowdfunding-form.js
+	npx -- uglifyjs --compress --mangle -o $(TMP)/js/ferme-crowdfunding-form.min.js $(STATIC)/js/ferme-crowdfunding-form.js
 	cp $(TMP)/js/ferme-crowdfunding-form.min.js $(DIST_STATIC)/js
 	cp node_modules/aos/dist/aos.js $(TMP)/js/aos.js
-	npm exec -- uglifyjs --compress --mangle -o $(DIST_STATIC)/js/aos.min.js $(TMP)/js/aos.js
+	npx -- uglifyjs --compress --mangle -o $(DIST_STATIC)/js/aos.min.js $(TMP)/js/aos.js
 
 fonts:
 	mkdir -p $(DIST_STATIC)/fonts
