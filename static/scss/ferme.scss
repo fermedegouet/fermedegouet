@@ -21,13 +21,14 @@ $middle-green: #499f68;
 
 // bulma variables
 $section-padding: 3rem 1.5rem;
-//$navbar-background-color: $granny-smith-apple;
-//$navbar-item-hover-background-color: $tea-green;
-$navbar-item-active-background-color: hsl(0, 0%, 95%);
 
 @use "../../node_modules/bulma/sass";
 @use "../../node_modules/bulma/sass/utilities/mixins";
 @use "../../node_modules/bulma/sass/utilities/initial-variables";
+
+nav.navbar a.ferme-is-active {
+  background-color: hsl(0, 0%, 75%);
+}
 
 $tablet: initial-variables.$tablet;
 $fullhd: initial-variables.$fullhd;
