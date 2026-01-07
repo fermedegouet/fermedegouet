@@ -9,7 +9,12 @@ $ferme-people-img-size-mobile: 80px;
 $ferme-banner-min-height: 250px;
 $ferme-banner-height: 100%;
 $ferme-banner-height-mobile: 300px;
+$ferme-banner-height-tablet: 400px;
 $ferme-banner-img-src: url("../img/vaches-chaussitre.jpg");
+$ferme-banner-img-src-768: url("../img/vaches-chaussitre_768.jpg");
+$ferme-banner-img-src-1024: url("../img/vaches-chaussitre_1024.jpg");
+$ferme-banner-img-src-1216: url("../img/vaches-chaussitre_1216.jpg");
+$ferme-banner-img-src-1408: url("../img/vaches-chaussitre_1408.jpg");
 $ferme-map-height: 350px;
 
 $granny-smith-apple: #b3d89c;
@@ -26,25 +31,16 @@ $section-padding: 3rem 1.5rem;
 @use "../../node_modules/bulma/sass/utilities/mixins";
 @use "../../node_modules/bulma/sass/utilities/initial-variables";
 
+@use '../../node_modules/bootstrap-icons/font/bootstrap-icons.scss' with (
+  $bootstrap-icons-font-dir: "../fonts",
+);
+
 nav.navbar a.ferme-is-active {
   background-color: hsl(0, 0%, 75%);
 }
 
 $tablet: initial-variables.$tablet;
 $fullhd: initial-variables.$fullhd;
-
-// overwrite bootstrap-icons font dir path
-$bootstrap-icons-font-dir: "../fonts";
-
-@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
-
-@function str-replace($string, $search, $replace: '') {
-  $index: str-index($string, $search);
-  @if $index {
-    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-  }
-  @return $string;
-}
 
 html, body {
   height: 100%;
@@ -57,8 +53,11 @@ html, body {
 .ferme-header {
   &.ferme-header-with-logo {
     height: 100%;
-    @include mixins.touch {
+    @include mixins.mobile {
       max-height: $ferme-logo-container-height-mobile + $ferme-navbar-height + $ferme-banner-height-mobile;
+    }
+    @include mixins.tablet-only {
+      max-height: $ferme-logo-container-height-mobile + $ferme-navbar-height + $ferme-banner-height-tablet;
     }
     width: 100%;
     display: table;
@@ -89,20 +88,6 @@ html, body {
   to   {
   }
 }
-
-//#ferme-header-logo:after {
-//  content: "";
-//  position: absolute;
-//  background-image: url(../img/epis.jpg);
-//  background-position: 50% 50%;
-//  top: 0;
-//  left: 0;
-//  opacity: 0.4;
-//  background-size: cover;
-//  width: 100%;
-//  height: 100%;
-//  z-index: -1;
-//}
 
 .ferme-logo-img {
   vertical-align: middle;
@@ -250,10 +235,13 @@ h1 {
 
 .ferme-banner {
   display: table-row;
-  @include mixins.until($tablet) {
+  @include mixins.mobile {
     height: $ferme-banner-height-mobile;
   }
-  @include mixins.from($tablet) {
+  @include mixins.tablet-only {
+    height: $ferme-banner-height-tablet;
+  }
+  @include mixins.desktop {
     height: $ferme-banner-height;
   }
 }
@@ -262,32 +250,35 @@ h1 {
   position: relative;
   align-items: center;
   min-height: $ferme-banner-min-height;
-  @include mixins.until($tablet) {
+  @include mixins.mobile {
     height: $ferme-banner-height-mobile;
   }
-  @include mixins.from($tablet) {
+  @include mixins.tablet-only {
+    height: $ferme-banner-height-tablet;
+  }
+  @include mixins.desktop {
     height: $ferme-banner-height;
   }
   overflow: hidden;
   @include mixins.until($tablet) {
-    background-image: str-replace($ferme-banner-img-src, '.jpg', '_768.jpg');
+    background-image: $ferme-banner-img-src-768;
   }
   @include mixins.tablet-only {
-    background-image: str-replace($ferme-banner-img-src, '.jpg', '_1024.jpg');
+    background-image: $ferme-banner-img-src-1024;
   }
   @include mixins.desktop-only {
-    background-image: str-replace($ferme-banner-img-src, '.jpg', '_1216.jpg');
+    background-image: $ferme-banner-img-src-1216;
   }
   @include mixins.widescreen-only {
-    background-image: str-replace($ferme-banner-img-src, '.jpg', '_1408.jpg');
+    background-image: $ferme-banner-img-src-1408;
   }
   @include mixins.from($fullhd) {
     background-image: $ferme-banner-img-src;
   }
-  @include mixins.from($tablet) {
+  @include mixins.desktop {
     background-attachment: fixed;
-    background-position: bottom;
   }
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
